@@ -3,10 +3,7 @@ title: Glossary
 description: Glossary
 ---
 
-
-
 Below you can find a list of some of the most used terms inside the documentation that are specific to Webflow or to Shopify, and can help you get a better understanding of what you are reading.
-
 
 
 ## Webflow
@@ -15,7 +12,7 @@ Below you can find a list of some of the most used terms inside the documentatio
 
 is the user friendly and URL valid name of your page in Webflow. Inside slugs you can not use spaces, accented characters, special characters or uppercase characters. You can modify your page slug, inside page settings under the name **Slug**
 
-![webflow page slug setting](./webflow-slug.png)
+![webflow page slug setting](/images/webflow-slug.png)
 
 ### Element Settings
 
@@ -23,7 +20,7 @@ Element settings is a menu that you can find on the top right part of the Webflo
 
 
 
-![webflow settings](./webflow-settings.png)
+![webflow settings](/images/webflow-settings.png)
 
 
 
@@ -38,7 +35,7 @@ And they can be added inside the Element settings menu
 
 
 
-![custom attributes menu](./add-custom-attributes.png)
+![custom attributes menu](/images/add-custom-attributes.png)
 
 * Static Attributes
 
@@ -70,7 +67,7 @@ Where you can find the handle??
 
 For every item in Shopify there is a section called **Search Engine Listing Preview**
 
-![handle](./handle.png)
+![handle](/images/handle.png)
 
 at the bottom of it you can find a text field called **Url and Handle**, the *handle* is the editable part of this text field.
 
@@ -88,14 +85,14 @@ Shopify Customizer is a part of your Admin panel where you can find and change *
 
 
 
-![customizer](./shopify-customizer.png)
+![customizer](/images/shopify-customizer.png)
 
 
 
 > You can find it following the path Online Store > Themes > Customize
 
-For example the Adapter will analyze and make all your colors editable!  🖌️
+For example the Udesly App will analyze and make all your colors editable!  🖌️
 
 
 
-![Colors](./colors-settings.png)
+![Colors](/images/colors-settings.png)

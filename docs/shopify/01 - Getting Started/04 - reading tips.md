@@ -6,7 +6,7 @@ description: How to use Udesly Documentation
 
 
 
-Below some tips to approach this documentation and wrap your head around the Adapter in the fastest way:
+Below some tips to approach this documentation and wrap your head around the Udesly App in the fastest way:
 
 
 
@@ -31,7 +31,7 @@ And they can be added inside the Element settings menu
 
 
 
-![custom attributes menu](./add-custom-attributes.png)
+![custom attributes menu](/images/add-custom-attributes.png)
 
 You will find them inside the doc in the following ways:
 
@@ -71,7 +71,7 @@ You should now see a Button, with Sample Button, and a custom attribute:
 
 If you find issues during conversion or need help making some advanced stuff, well...
 
-<div class="center"> <img alt="magic" src="./dont-panic.gif" /></div>
+<div class="center"> <img alt="magic" src="/images/dont-panic.gif" /></div>
 
 1. Read the FAQs, most of the time your issue can be found there;
 2. Contact us on the [help center](https://www.udesly.com/help-center), we will be happy to help you during business days! 💼

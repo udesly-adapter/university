@@ -119,7 +119,7 @@ const DocInternalNavigation = ({ title, headings }) => {
             <span>{title}</span>
           </div>
           <nav>
-            {headings
+            {(headings || [])
               .filter(heading => [2, 3].includes(heading.depth))
               .map(heading => (
                 <a

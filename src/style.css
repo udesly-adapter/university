@@ -587,3 +587,12 @@ kbd {
 	-webkit-border-radius: 3px;
 	text-shadow: 0 1px 0 #fff;
 }
+
+td:nth-child(even), th:nth-child(even) {
+  background-color: #f5f2f0;
+}
+
+.mw {
+  max-width: 100%;
+  height: auto;
+}

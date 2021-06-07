@@ -1,19 +1,19 @@
 ---
 title: How it works
-description: "How the adapter works"
+description: "How the app works"
 ---
 
-The **Adapter** converts your Webflow project .zip in a Shopify theme. It analyzes your theme and adds all the necessary *Liquid* code, so that you don't need to!* 
+The **Udesly App** converts your Webflow project .zip in a Shopify theme. It analyzes your theme and adds all the necessary *Liquid* code, so that you don't need to!* 
 
 
 
 Design your eCommerce in Webflow like a normal site, your design will be converted along with your interactions, fonts, and your CMS elements.
 
-The **Adapter** is smart enough to understand your Site structure through the **magic extension**, it will automatically configure your template and export your *CMS data*. Yep, you have read it correctly!
+The **Udesly App** is smart enough to understand your Site structure through the **magic extension**, it will automatically configure your template and export your *CMS data*. Yep, you have read it correctly!
 
 
 
-<div class="center"> <img alt="magic" src="./magic.gif" /></div>
+<div class="center"> <img alt="magic" src="/images/magic.gif" /></div>
 
 
 

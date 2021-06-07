@@ -23,7 +23,7 @@ There are some pages in Shopify that have not a specific template that can be cr
 
 These kind of special pages will directly use your `theme.liquid` layout without allowing you to customize in a different way the template.
 
-To overcome this issue, with the Adapter, you can define a **Special page**, just by creating a new page in Webflow and giving it the slug **special-page**.
+To overcome this issue, with the Udesly App, you can define a **Special page**, just by creating a new page in Webflow and giving it the slug **special-page**.
 
 Inside this page the only dynamic element you can insert is a placeholder where the whole content will be added directly from Shopify.
 
@@ -69,7 +69,7 @@ All the forms require a little of attention. The purpose of the form is declared
 
 
 
-![form name](./form-name.png)
+![form name](/images/form-name.png)
 
 
 
