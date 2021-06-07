@@ -1,0 +1,42 @@
+---
+title: Introduction
+description: Intro to the Udesly Adapter
+
+---
+
+The **Udesly Adapter** is a web app that allows you to *adapt* your Webflow theme in order to be used with different CMSes.  
+
+
+
+## Why the Adapter?
+
+Why you should use the *Adapter* in first case? 🤔
+
+Webflow, it's an amazing design tool! 🎨 And we wanted to use Webflow everyday and in every kind of projects!
+
+Every tool has it's own *pros*, *cons* and *best use cases*, but we didn't want to give up on Webflow at least as design tool when our customers needed a different CMS or needed to cover functionalities not yet available. 
+
+That's why we built up the **Adapter**, to use Webflow **always**... And also to not bother up our devs with boring task like *writing html markup*...
+
+It's just a way to mix up different tools and get the best of all worlds! ✨
+
+In this case, let's be specific and let's start our journey to **Shopify**. 
+
+
+
+## Requirements
+
+In order to use the Adapter you need to meet the following requirements:
+
+* An active Udesly plan (**Premium** or **All Access**);
+* A [Webflow Account plan](https://webflow.com/pricing#account) in order to export your Webflow project;
+* Our [magic Chrome extension](https://chrome.google.com/webstore/detail/udesly-template-configura/khhgdnefpkphamogndglabaalbpfidbf) 🧙
+* Our [Shopify App](https://www.shopify.com) to import your Webflow data and automatically create the pages;
+* A theme made with eCommerce Elements
+
+
+
+> You don't need to get a *site* plan on Webflow, your site will be hosted on Shopify platform.
+
+
+

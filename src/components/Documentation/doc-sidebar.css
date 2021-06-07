@@ -1,0 +1,76 @@
+.doc-sidebar img {
+  height: 50px;
+  display: block;
+  object-fit: contain;
+  width: auto;
+  align-self: flex-start;
+  margin-left: 26px;
+}
+
+.doc-sidebar {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.doc-sidebar .pages-tree {
+  margin: 32px 0px 0px;
+  display: block;
+  padding: 0px 0px 0px 16px;
+  padding-left: 16px;
+  font-size: 15px;
+}
+
+.doc-folder {
+  margin: 0px 0px 24px;
+  display: block;
+  padding: 0px;
+  position: relative;
+}
+
+.doc-folder-name {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  color: rgb(157, 170, 182);
+  text-transform: uppercase;
+  padding: 7px 24px 7px 16px;
+}
+
+.doc-folder-link {
+  color: inherit;
+  border-color: transparent currentcolor transparent transparent;
+  border-style: solid none solid solid;
+  border-width: 1px 0px 1px 1px;
+  border-image: none 100% / 1 / 0 stretch;
+  cursor: pointer;
+  display: flex;
+  padding: 7px 24px 7px 16px;
+  position: relative;
+  align-items: center;
+  text-decoration: none;
+  -moz-box-align: center;
+}
+
+.doc-folder-link:hover {
+  background-color: rgb(230, 236, 241);
+}
+
+.doc-folder-link.current {
+  color: var(--color-primary);
+  border-style: solid none solid solid;
+  border-width: 1px 0px 1px 1px;
+  border-image: none 100% / 1 / 0 stretch;
+  cursor: pointer;
+  display: flex;
+  padding: 7px 24px 7px 16px;
+  position: relative;
+  align-items: center;
+  border-color: rgb(230, 236, 241) !important;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  -moz-box-align: center;
+}
+

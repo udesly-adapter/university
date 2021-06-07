@@ -1,0 +1,78 @@
+nav.external-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "previous next";
+  grid-gap: 8px;
+  padding: 20px 0;
+}
+
+.card-link {
+  color: rgb(36, 42, 49);
+  border: 1px solid rgb(230, 236, 241);
+  margin: 0px;
+  display: flex;
+  padding: 0px;
+  position: relative;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+  align-items: center;
+  border-radius: 3px;
+  flex-direction: row;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  -moz-box-align: center;
+  break-inside: avoid;
+  -moz-box-orient: horizontal;
+  transition: border 250ms ease 0s;
+  -moz-box-direction: normal;
+  transition: color 250ms ease, border-color 250ms ease;
+}
+
+.card-link .icon {
+  flex: 0 0 auto;
+  color: rgb(157, 170, 182);
+  margin: 0px;
+  display: block;
+  padding: 16px;
+  padding-right: 16px;
+  transition: color 250ms ease 0s;
+}
+.card-link:first-child {
+  padding-right: 0px;
+}
+
+.card-link .card-body {
+  flex: 1 1 0%;
+  margin: 0px;
+  display: block;
+  padding: 16px;
+}
+
+.card-body.previous {
+  text-align: right;
+}
+
+.card-body .folder {
+  color: rgb(157, 170, 182);
+  margin: 0px;
+  display: block;
+  padding: 0px;
+}
+
+.card-body .title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-link:hover, .card-link:hover .icon {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.card-link.previous {
+    grid-area: previous
+}
+
+.card-link.next {
+    grid-area: next
+}
