@@ -8,6 +8,17 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
+  const cmses = {};
+
+  posts.forEach(post => {
+    if (!cmses[post.fields.cms]) {
+      cmses[post.fields.cms] = []
+    }
+    cmses[post.fields.cms].push(post)
+  })
+
+  console.log(Object.keys);
+
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
@@ -25,40 +36,52 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
+      <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
+        {Object.keys(cmses).map(cms => {
+          
+          return <div>
+            <h1>{cms}</h1>
+            <ol style={{ listStyle: `none` }}>
+            {postsTemplate(cmses[cms])}
+          </ol>
+          </div>
         })}
-      </ol>
+        </div>
     </Layout>
   )
+}
+
+function postsTemplate(posts) {
+  return posts.map(post => {
+    const title = post.frontmatter.title || post.fields.slug
+
+    return (
+      <li key={post.fields.slug}>
+        <article
+          className="post-list-item"
+          itemScope
+          itemType="http://schema.org/Article"
+        >
+          <header>
+            <h2>
+              <Link to={post.fields.slug} itemProp="url">
+                <span itemProp="headline">{title}</span>
+              </Link>
+            </h2>
+            <small>{post.frontmatter.date}</small>
+          </header>
+          <section>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: post.frontmatter.description || post.excerpt,
+              }}
+              itemProp="description"
+            />
+          </section>
+        </article>
+      </li>
+    )
+  })
 }
 
 export default BlogIndex
@@ -75,6 +98,7 @@ export const pageQuery = graphql`
         excerpt
         fields {
           slug
+          cms
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
