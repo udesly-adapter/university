@@ -20,3 +20,11 @@ Well for JamStack there are few limits:
 * **Made with Udesly** Banner;
 
 * **No eCommerce** conversion;
+
+## 4. Can I change style or layout after conversion?
+
+If you can code, you can add style snippets directly in Netlify CMS, otherwise you need to modify in Webflow and convert again!
+
+## 5. Do I lose CMS data when I reupload the theme to Github?
+
+No, the Udesly App never overwrites data that has been modified from Netlify CMS. And in any case, your repository will have all the data history, you can always roll back!
