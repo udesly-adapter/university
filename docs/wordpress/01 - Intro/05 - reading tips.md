@@ -12,8 +12,8 @@ Below some tips to approach this documentation and wrap your head around the Ude
 
 ## Before Conversion
 
-1. Read the [**Glossary**](/shopify/getting-started/glossary) at least once;
-2. Read in toto the section called [**Theme Setup**](/shopify/theme-setup);
+1. Read the [**Glossary**](/wordpress/intro/glossary) at least once;
+2. Read in toto the section called [**Theme Setup**](/wordpress/theme-setup);
 3. Grab a coffee ☕ and let the magic happen!
 
 

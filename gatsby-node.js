@@ -88,7 +88,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   await createDocsPagesForCMS("shopify", graphql, createPage);
   await createDocsPagesForCMS("jamstack", graphql, createPage);
-  
+  await createDocsPagesForCMS("wordpress", graphql, createPage);
+  await createDocsPagesForCMS("ghost", graphql, createPage);
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

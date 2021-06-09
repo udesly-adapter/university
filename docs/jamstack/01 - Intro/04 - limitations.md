@@ -13,6 +13,8 @@ Below you can find a list of limitations that hopefully will be resolved in the 
 
 * Code optimizations like *defer all scripts* or *defer css* are not implemented yet;
 
+* Video Field doesn't work correctly yet;
+
 ## Netlify CMS
 
 * No support for i18n;
