@@ -46,6 +46,7 @@ For further details refer to [this documentation](/wordpress/general/static-page
 
 All the forms require a little of attention. The purpose of the form is declared with the **Form Name** that is a field that can be set in Webflow Element Settings:
 
+![](/images/form-contact.png)
 
 For example **Contact** declares a form that can be used to **Contact** you. 
 

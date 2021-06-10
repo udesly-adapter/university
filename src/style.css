@@ -599,27 +599,27 @@ td:nth-child(even), th:nth-child(even) {
 
 ::-webkit-scrollbar{
   width:6px;
-  background-color:#ffffff;
+  background-color:transparent;
 }
 ::-webkit-scrollbar:horizontal{
   height:6px;
 }
 ::-webkit-scrollbar-track{
-  border:1px #ffffff solid;
+  border:1px transparent solid;
   border-radius:6px;
-  -webkit-box-shadow:0 0 6px #ffffff inset;
+  -webkit-box-shadow:0 0 6px transparent inset;
 }
 ::-webkit-scrollbar-thumb{
   background-color:#6f39f8;
-  border:1px solid #ffffff;
+  border:1px solid transparent;
   border-radius:6px;
 }
 ::-webkit-scrollbar-thumb:hover{
   background-color:#6f39f8;
-  border:1px solid #ffffff;
+  border:1px solid transparent;
 }
 
 ::-webkit-scrollbar-thumb:active{
   background-color:#6f39f8;
-  border:1px solid #ffffff;
+  border:1px solid transparent;
 }
