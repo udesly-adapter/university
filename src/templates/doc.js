@@ -12,7 +12,7 @@ import {DocContext} from '../components/Contexts/DocContext';
 const DocTemplate = ({ data, location, pageContext, path }) => {
   // console.log(data, location, pageContext.sidebar, path)
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteTitle = data.site.siteMetadata?.title || `Doc`
   const { previous, next } = data
 
   return (

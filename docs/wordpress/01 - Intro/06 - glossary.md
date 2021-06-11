@@ -61,10 +61,8 @@ These attributes are dynamic, and it means that the name can be copied, but the 
 
 **Slug** is the user friendly and URL valid name of anything in WordPress. Inside handle you can not use spaces, accented characters, special characters or uppercase characters. This term is used everywhere in WordPress to reference one specific item, and with item you can talk about: *pages, products, articles, blogs, etc.* Everything that has a name, also as a slug. 
 
-### Action
-In WordPress, an Action is a PHP function that is executed at specific points throughout the WordPress Core.
-
-Developers can create a custom Action using the [**Action API**](https://codex.wordpress.org/Function_Reference/add_action) to add or remove code from an existing Action by specifying any [**existing Hook**](https://codex.wordpress.org/Plugin_API/Action_Reference). This process is called “hooking“.
+### Hooks
+In WordPress development, **Hooks** are functions that can be applied to an Action or a Filter. Actions and Filters in WordPress are functions that can be modified by theme and plugin developers to change the default WordPress functionality. It is important to note that actions and filters are not the same thing. Actions are functions performed when a certain event occurs in WordPress. Filters allow you to modify certain functions. A simple way to create actions and snippets in WordPress directly from the dashboard is the plugin [**Code Snippets**](https://wordpress.org/plugins/code-snippets/). [**Simple guide on hooks**](https://docs.presscustomizr.com/article/26-wordpress-actions-filters-and-hooks-a-guide-for-non-developers)
 
 ### Post
 Also known as “articles” and sometimes incorrectly referred to as “blogs”. In WordPress, “posts” are articles that you write to populate your blog.
