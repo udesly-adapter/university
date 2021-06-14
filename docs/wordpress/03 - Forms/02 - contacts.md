@@ -4,7 +4,8 @@ title: "Contact"
 
 Contact forms can be used to collect any type of data or to let your user send you a message without exposing directly the email of your business!
 
-> To declare a contact form, set as **Form Name** the value **Contact**.
+> To declare a contact form, set as **Form Name** the value **Contact**. The form must contain at least one input **type email**!
+
 
 By default the contact form will be stored in your database into a custom post type called **Contact Forms**:
 
@@ -133,7 +134,7 @@ add_filter('udesly/params/contact_form_options', 'mytheme_modify_contact_options
 
 ### Mail To
 
-Filter that allows to modify the email to parameter;
+Filter that allows to modify the *email to* parameter;
 
 ```apply_filters('udesly/ajax/contact/mail_to', string $mail_to, array $form_data)```
 
@@ -154,4 +155,116 @@ function mytheme_modify_mail_to($mail_to, $form_data) {
     return $mail_to;
 }
 add_filter('udesly/ajax/contact/mail_to', 'mytheme_modify_mail_to', 10, 2);
+```
+
+### Mail CCs
+
+Filter that allows to modify the *email ccs* parameter;
+
+```apply_filters('udesly/ajax/contact/mail_ccs', array $mail_ccs, array $form_data)```
+
+
+#### Parameters
+
+* **$mail_ccs**: array containing the email recipients;
+* **$form_data**: associative array containing the data sent by the form, e.g: ```$form_data['email']``` is the field with the name email;
+
+This filter can be used for example to change the email recipients based on a form value;
+
+```php
+function mytheme_modify_mail_ccs($mail_ccs, $form_data) {
+    // if the form field foo is set to bar add to ccs to another email;
+    if ("bar" === $form_data["foo"]) {
+        // Also send the email to admin@admin.com
+        $mail_ccs[] = "admin@admin.com";
+    }
+    return $mail_ccs;
+}
+add_filter('udesly/ajax/contact/mail_ccs', 'mytheme_modify_mail_ccs', 10, 2);
+```
+
+### Mail Subject
+
+Filter that allows to modify the *subject* parameter;
+
+```apply_filters('udesly/ajax/contact/mail_subject', string $mail_subject, array $form_data)```
+
+
+#### Parameters
+
+* **$mail_subject**: string containing the email subject;
+* **$form_data**: associative array containing the data sent by the form, e.g: ```$form_data['email']``` is the field with the name email;
+
+This filter can be used for example to change the subject based on a form value;
+
+```php
+function mytheme_modify_mail_subject($email_subject, $form_data) {
+    // if the form field foo is set to bar add to ccs to another email;
+    if ("bar" === $form_data["foo"]) {
+        // Also send the email to admin@admin.com
+        $email_subject = "Received a new request with foo = bar";
+    }
+    return $email_subject;
+}
+add_filter('udesly/ajax/contact/mail_subject', 'mytheme_modify_mail_subject', 10, 2);
+```
+
+### Mail Message
+
+Filter that allows to modify the *message* parameter;
+
+```apply_filters('udesly/ajax/contact/mail_message', string $mail_message, array $form_data)```
+
+
+#### Parameters
+
+* **$mail_message**: string containing the email message;
+* **$form_data**: associative array containing the data sent by the form, e.g: ```$form_data['email']``` is the field with the name email;
+
+This filter can be used for example to change the format of the message, below you find how by default the message is constructed;
+
+```php
+function mytheme_modify_mail_message($email_message, $form_data) {
+    
+	$message = __( 'Someone sent a message from ' )  . get_bloginfo( 'name' ) .  __( ':' ) . "\r\n\r\n";
+
+	foreach ($form_data as $key => $value) {
+	    $key = sanitize_key($key);
+	    $value = sanitize_textarea_field($value);
+	    $form_data[$key] = $value;
+
+	    $message .= ucfirst($key) . ": " . $value . "\r\n";
+    }
+
+    return $message;
+}
+
+add_filter('udesly/ajax/contact/mail_message', 'mytheme_modify_mail_message', 10, 2);
+```
+
+### Mail Headers
+
+Filter that allows to modify the *headers* parameter;
+
+```apply_filters('udesly/ajax/contact/headers', array $headers, array $form_data)```
+
+
+#### Parameters
+
+* **$headers**: array containing all the headers;
+* **$form_data**: associative array containing the data sent by the form, e.g: ```$form_data['email']``` is the field with the name email;
+
+This filter can be used for example to change the headers of the message;
+
+```php
+function mytheme_modify_mail_headers($headers, $form_data) {
+      // if the form field foo is set to bar add an header;
+    if ("bar" === $form_data["foo"]) {
+        $headers[] = "X-Priority: 1"; // Urgent message!
+    }
+	
+    return $headers;
+}
+
+add_filter('udesly/ajax/contact/headers', 'mytheme_modify_mail_headers', 10, 2);
 ```

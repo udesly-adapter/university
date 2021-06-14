@@ -287,7 +287,7 @@ class CopyElement extends HTMLElement {
     try {
       e.clipboardData.setData("application/json", this.value)
       e.preventDefault()
-      notyf.success(`${this.name} copied! Paste it inside Webflow!`)
+      notyf.success(`<strong>${this.name}</strong> copied! Paste it inside Webflow!`)
     } catch (e) {
       notyf.error("Failed to copy Element :(")
     }
@@ -306,7 +306,10 @@ class CopyElement extends HTMLElement {
   }
 
   decode(str) {
-    return ULZSS.decode(this.b64DecodeUnicode(str))
+    if (this.b64) {
+      return this.b64DecodeUnicode(str);
+    }
+    return decodeURIComponent(ULZSS.decode(this.b64DecodeUnicode(str)))
   }
 
   constructor() {
@@ -317,7 +320,10 @@ class CopyElement extends HTMLElement {
     const shadow = this.attachShadow({ mode: "open" })
 
     this.name = this.getAttribute("name")
+    this.b64 = this.hasAttribute("b64");
     this.value = this.decode(this.textContent.trim())
+
+    
 
     console.log(this.value)
 
