@@ -51,3 +51,7 @@ You can do 2 things:
 ## 9. I don't receive forms by Email!
 
 99% of times this means your server has a wrongly configured SMTP, use a plugin like [**WP Mail SMTP**](https://wordpress.org/plugins/wp-mail-smtp/), in order to check or change your server configuration.
+
+## 10. My homepage scrolls infinitely and repeats itself!
+
+WordPress is born as a Blog Engine, so by default the Homepage of your WordPress site will be the blog page. If you don't want to have the blog page on your home, you should set your homepage as static and select a page to show! You can do it from your WordPress admin panel, following the path *Settings » Reading*.

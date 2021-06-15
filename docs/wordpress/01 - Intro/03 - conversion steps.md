@@ -25,7 +25,7 @@ Converting a site is very very simple, below you will find a guide divided into 
 
 ## WordPress
 
-1. Upload and activate your theme by following the path Appearance > Themes;
+1. Upload and activate your theme by following the path Appearance » Themes;
 2. Install WooCommerce from WordPress respository if your site is an eCommerce site;
 3. You will see a notice on your top bar asking you to install Udesly Adapter plugin;
 

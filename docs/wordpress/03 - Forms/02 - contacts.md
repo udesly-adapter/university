@@ -14,7 +14,7 @@ By default the contact form will be stored in your database into a custom post t
 and will be sent by email on the address you specify into the Contact forms settings. (By default it will be the admin email).
 
 ## Settings
-You can change what happens when a form is sent by following the path: **Contact Forms > Settings**:
+You can change what happens when a form is sent by following the path: **Contact Forms » Settings**:
 
 ![](/images/contact-forms-settings.png)
 

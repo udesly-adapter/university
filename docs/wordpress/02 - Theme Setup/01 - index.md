@@ -98,7 +98,7 @@ For example if you want to create a template for a post you have to set on the *
 
 ### Utility Pages
 
-1. **maintenance**: used for Maintenance mode that can be enabled in WordPress on the path: **Settings > Theme > Site Mode**;
+1. **maintenance**: used for Maintenance mode that can be enabled in WordPress on the path: **Settings » Theme » Site Mode**;
 2. **wp-die**: used when your server crashes on the frontend, pretty cool feature that allows you to make your site declare in a stylish way that it's on fire and something really bad happened! 🔥 (...or simply when the token for the passwordless login expired 😅)
 
 

@@ -89,7 +89,7 @@ Shopify Customizer is a part of your Admin panel where you can find and change *
 
 
 
-> You can find it following the path Online Store > Themes > Customize
+> You can find it following the path Online Store » Themes » Customize
 
 For example the Udesly App will analyze and make all your colors editable!  🖌️
 
