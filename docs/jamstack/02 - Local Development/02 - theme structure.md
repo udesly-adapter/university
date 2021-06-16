@@ -13,7 +13,7 @@ The adapter exports an **11ty** theme with a modified theme structure, below you
 All node projects, contains this file called **package.json** - this file holds various metadata relevant to the project. This file is used to give information to npm (Node Package Manager) that allows it to identify the project as well as handle the project's dependencies. 
 In order to develop your project locally you must install your node project dependencies first, by launching the following command in the root of your folder:
 
-```
+```bash
 npm i
 ```
 

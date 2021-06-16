@@ -376,6 +376,7 @@ class CopyElement extends HTMLElement {
             transition: border 250ms ease 0s;
             transition: color 250ms ease, border-color 250ms ease;
         }
+
         div.copy-button:hover {
             color: var(--color-primary);
             border-color: var(--color-primary);

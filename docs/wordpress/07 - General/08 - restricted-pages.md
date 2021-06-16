@@ -78,4 +78,4 @@ if (date('l') !== "Saturday") {
 </redirect-rule>
 ```
 
-Basically the page is accessible only on Saturday!
+Basically the page is accessible only on Saturday! 🤣

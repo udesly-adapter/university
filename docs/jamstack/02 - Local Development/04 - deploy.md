@@ -9,13 +9,13 @@ It's really easy to build and deploy an 11ty theme on your own hosting, just fol
 
 2. Move the current working directory to your unzipped theme, by using the command:
 
-```
+```bash
 cd "Full path to the unzipped folder"
 ```
 
 3. Launch the command:
 
-```
+```bash
 npm i && npm run build
 ```
 

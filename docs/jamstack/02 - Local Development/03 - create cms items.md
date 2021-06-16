@@ -6,7 +6,7 @@ description: Markdown files example
 ## Markdown
 To create a CMS item with your text editor you must create a new markdown file, for example if your site has a posts collection and you want to create a new post called that has a permalink "hello-world", create a file in the following path:
 
-```
+```bash
 cms/posts/hello-world.md
 ```
 
@@ -25,7 +25,7 @@ Every Markdown file is composed by 2 parts:
 
 Frontmatter is the starting part of the file delimited by 
 
-```
+```bash
 ---
 ```
 

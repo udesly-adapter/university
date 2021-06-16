@@ -492,12 +492,12 @@ function mytheme_change_magic_register_message($message, $login_url) {
 add_filter('udesly/ajax/login/email_message', 'mytheme_change_magic_register_message', 10, 2);
 ```
 
-### Registration Email Message
+### Edit Email Message
 
-Filter that can be used to change the registration message when user asks for a magic link
+Filter that can be used to change the edit email message when user asks for a magic link
 
 ```php
-apply_filters('udesly/ajax/register/email_message', string $message, string $url );
+apply_filters('udesly/ajax/edit_email/email_message', string $message, string $url );
 ```
 
 #### Parameters

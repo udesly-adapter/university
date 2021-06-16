@@ -1,0 +1,28 @@
+---
+title: "Shortcodes"
+---
+
+Unfortunately for now the feature parity with old version has not been reached yet, and some pages are available only with shortcodes, below you can find some copy buttons with all the shortcodes you might need to use.
+
+You will probably need some custom css in order to style them better, so if you need any help in targeting some element with custom css code, don't hesitate to contact us with links and we will help you in this regard!
+
+
+### Cart
+
+Used on the cart page, the cart shortcode displays cart content and interface for coupon codes and other cart bits and pieces.
+
+<copy-element name="Cart Shortcode">ICU3QiUyMjB0eXBl4YCnJSQzQeKApjQwdyBlYmZsb3cgJTJGWHNjQHBEYXRh4oC+JDJD4YGLcGF5UGxvYWTlgY7jgZ5Abm9kZXPlgZ9ENULkgLRfaeaBgyAyMmFiNDMgNTg0Zi0wIGJhZi03MCHhgKUwZTYzLSAzNWI0NTMgYjdmNTYxMeeCgHRhZ+eCqmQkaXbngphjbGFEc3Pqgoc1ROWAuSBoaWxkcmVebuiCoe+Cku+CkuGCkuGDryYy54Gk64SgQmxvVGNr54SQZOWEneaEjTB0ZXh05IWLdDxydeGFle+DlOmDlHgwYXR0cu2EuW4kYW3ohotzaG84cnRj4YWf54W/djxhbOKBtuWGq+SCgzJYJTdE4oSP4YCm4YCpX+GGpu+Ggu+Ggu+GguSEkOSGgifvg6LhgpfoiJ41Qncgb29jb21tIGVyY2VfY1hhcnTjhovmgqXjiKVQc3R5bO+GrOKIiiXhh4N074eEMjJpPnjjiIHugLXjhqTmiaZpIG50ZXJhYzB0aW9u74iGMkAyZXZlbu+BukPiibzjgZFMaXPtgpdB54WMMjJtZeyHoiB1bmxpbmsgZWRTeW1iIG9sQ291biXlh7Ew5YiScm9wUHBlZEzhgYXli7Yh5oC5eW5CaW4gZFJlbW92XGVk74GZ4oGA4oKp74GEIeqBvXBhZ2luPmHihIXvgafhgqDjiII=</copy-element>
+
+
+### My Account
+
+Shows the ‘my account’ section where the customer can view past orders and update their information.
+
+<copy-element name="My Account shortcode">ICU3QiUyMjB0eXBl4YCnJSQzQeKApjQwdyBlYmZsb3cgJTJGWHNjQHBEYXRh4oC+JDJD4YGLcGF5UGxvYWTlgY7jgZ5Abm9kZXPlgZ9ENULkgLRfaeaBgyAyMjlkMDggYTQ1Ny1iIGMyZC01NSAxZS1mOTkgNC02ZDY5IGMxOGViOCQ1M+eCgHRhZzHngqpkaXbngphjMGxhc3Pqgoc1IkTlgLloaWxkWHJlbuiCoe+Cku+Ckj3hgpI04oSQ5oGk64SgQjBsb2Nr54SQZCPlhJ3mhI10ZXh0UeSFi3RydeGFle+DlCHpg5R4YXR0cjHthLluYW3ohotzQGhvcnRj4YWfUeeFv3ZhbOKBtuWGq0HkgoMyJTdE4oSPX+GApuGAqeGGpu+Ggu+Ggu+Ggj/khJDkhoLvg6LhgpfoiJ41IEJ3b29jbyBtbWVyY2UgX215X2FjQGNvdW5044aRI+aCq+OIq3N0eWw374ay4Ymu4oeJdO+HijJQMml4Me+Hn+GAtSPhibnoiaxpbnRlIHJhY3RpbyJu74iMMjJldjxlbu+BuuKCkuOBkUwsaXPtgpfnhZIyMiRtZeyHqHVubCBpbmtlZFMgeW1ib2xDK+OEguOMojDliJhyb0BwcGVkTOGBhSPli7zmgLl5bkJpIG5kUmVtb1h2ZWTvgZnigYDigqkj74GE6oG9cGFnaVxuYeKEhe+Bp+GCoOOIiA==</copy-element>
+
+
+### Order Tracking
+
+Lets a user see the status of an order by entering their order details.
+
+<copy-element name="Order Tracking shortcode">ICU3QiUyMjB0eXBl4YCnJSQzQeKApjQwdyBlYmZsb3cgJTJGWHNjQHBEYXRh4oC+JDJD4YGLcGF5UGxvYWTlgY7jgZ5Abm9kZXPlgZ9ENULkgLRfaeaBgyAyMjI2MTkgZGE4MC03IGI2Ny0wMCA4Yy0zOGYgNS02NjQ2IDA5Y2I5MyRjMOeCgHRhZzHngqpkaXbngphjMGxhc3Pqgoc1IkTlgLloaWxkWHJlbuiCoe+Cku+Ckj3hgpIx4oSQ5oGk64SgQjBsb2Nr54SQZCPlhJ3mhI10ZXh0UeSFi3RydeGFle+DlCHpg5R4YXR0cjHthLluYW3ohotzQGhvcnRj4YWfUeeFv3ZhbOKBtuWGq0HkgoMyJTdE4oSPX+GApuGAqeGGpu+Ggu+Ggu+Ggj/khJDkhoLvg6LhgpfoiJ41IEJ3b29jbyBtbWVyY2UgX29yZGVyIF90cmFja1hpbmfjhpXmgq/jiK9Qc3R5bO+GtuGJsiXih41074eOMjJpPnjjhpnugLXhib3oibBpKG50ZeGCkXRpJG9u74iQMjJlWHZlbu+BuuKCkuOBkThMaXPtgpfnhZYyKDJtZeyHrHVuIGxpbmtlZCBTeW1ib2xQQ291buWHu+GKryHjiJxyb3BwZTxkTOGBheWMgOaAuXkgbkJpbmRSIGVtb3ZlZD/vgZnigYDigqnvgYTqgb1wQGFnaW5h4oSFJ++Bp+GCoOOIjA==</copy-element>
