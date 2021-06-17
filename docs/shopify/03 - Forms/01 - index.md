@@ -5,7 +5,7 @@ All the forms require a little of attention. The purpose of the form is declared
 
 ![form name](/images/form-name.png)
 
-For example **Contact** declares a form that can be used to **Contact** you. 
+For example **Subscribe** declares a form that can be used to **Subscribe** to your shop! 
 
 Almost all forms requires an input type **Email**. There are many and many different type of forms convertible using the Udesly App! Just select the type of form you need from the list below and configure it!
 
