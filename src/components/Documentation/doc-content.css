@@ -20,3 +20,29 @@ article {
     flex-direction: column;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-meta .edit-on-github {
+    color: rgb(157, 170, 182);
+    text-decoration: none;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 250ms ease, border-color 250ms ease;
+}
+
+.edit-on-github img {
+    height: 1.3em;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.edit-on-github:hover {
+    color: var(--color-primary);
+}

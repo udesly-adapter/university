@@ -14,7 +14,9 @@ const DocTemplate = ({ data, location, pageContext, path }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Doc`
   const { previous, next } = data
-
+  
+  const githubUrl = data.site.siteMetadata.repoUrl + data.markdownRemark.fields.cms + "/" + data.markdownRemark.parent.relativePath;
+ 
   return (
     <DocContext.Provider value={{post, sidebar: pageContext.sidebar, path, previous, next}}>
       <DocLayout
@@ -33,7 +35,7 @@ const DocTemplate = ({ data, location, pageContext, path }) => {
         </div>
         <div className="main-content-wrapper">
           <div className="main-content">
-            <DocContent post={post} previous={previous} next={next} />
+            <DocContent post={post} githubUrl={githubUrl} previous={previous} next={next} />
           </div>
           <div className="sticky-wrapper">
             <DocInternalNavigation
@@ -54,6 +56,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        repoUrl
       }
     }
     markdownRemark(id: { eq: $id }) {
@@ -78,6 +81,7 @@ export const pageQuery = graphql`
       parent {
         ... on File {
           modifiedTime(formatString: "")
+          relativePath
         }
       }
     }

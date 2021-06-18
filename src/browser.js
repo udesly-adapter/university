@@ -323,10 +323,6 @@ class CopyElement extends HTMLElement {
     this.b64 = this.hasAttribute("b64");
     this.value = this.decode(this.textContent.trim())
 
-    
-
-    console.log(this.value)
-
     // Create some CSS to apply to the shadow dom
     const style = document.createElement("style")
 

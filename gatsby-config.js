@@ -5,6 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Udesly University`,
     siteUrl: `https://www.udesly.com/`,
+    repoUrl: `https://github.com/udesly-adapter/university/docs/`,
     social: {
       twitter: ``,
     },
