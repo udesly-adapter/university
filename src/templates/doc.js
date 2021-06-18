@@ -15,7 +15,7 @@ const DocTemplate = ({ data, location, pageContext, path }) => {
   const siteTitle = data.site.siteMetadata?.title || `Doc`
   const { previous, next } = data
   
-  const githubUrl = data.site.siteMetadata.repoUrl + data.markdownRemark.fields.cms + "/" + data.markdownRemark.parent.relativePath;
+  const githubUrl = data.site.siteMetadata.repoUrl + 'blob/main/docs/' + data.markdownRemark.fields.cms + "/" + data.markdownRemark.parent.relativePath;
  
   return (
     <DocContext.Provider value={{post, sidebar: pageContext.sidebar, path, previous, next}}>
