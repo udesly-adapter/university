@@ -3,7 +3,7 @@ title: "Accounts"
 ---
 In this page you will find all the forms related to all the accounts functionalities, like login, register and so on!
 
-> Take in mind that by default Shopify Customers are DISABLED. You need to enable them from the Shopify settings area, follow the official guide to enable them
+> Take in mind that by default Shopify Customers are **disabled**. You need to enable them from the Shopify settings area, follow the [**official guide**](https://help.shopify.com/en/manual/checkout-settings/customer-accounts) to enable them
 
 
 ### Login
