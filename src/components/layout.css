@@ -1,0 +1,167 @@
+.navigation {
+    position: static;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 14;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 3%;
+    padding-left: 3%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #fff;
+}
+
+.navigation-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    min-height: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navigation-container > * {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation .logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.navigation a {
+    height: 100%;
+    color: #a0a0a0;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.035em;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #3c3c3b;
+}
+
+.navigation-dropdown-wrapper {
+    display: -ms-grid;
+    display: grid;
+    height: 130px;
+    min-width: auto;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    display: grid;
+    overflow: hidden;
+    max-width: 880px;
+    min-width: 140px;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: ".";
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 4px -19px 35px 0 rgb(32 53 90 / 8%), 11px 11px 30px -10px rgb(32 53 90 / 15%);
+    position: relative;
+}
+
+.navigation-dropdown-parent::before {
+    content:"\A";
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    top: -16px;
+    z-index: 9999999999;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.dropdown-link {
+    height: 100%;
+    min-width: 200px;
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 25;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 200px;
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #f3f3f3;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    color: #283338;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown * {
+    cursor: pointer;
+}
+
+.navigation-dropdown-parent {
+    opacity: 0;
+    transform: translate3d(0px, 15px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    display: none;
+    position:absolute;
+    top: 45px;
+}
+
+.dropdown:hover .navigation-dropdown-parent {
+    display: block;
+    opacity: 1;
+}

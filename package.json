@@ -27,6 +27,8 @@
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-remark": "^4.4.0",
     "gatsby-transformer-sharp": "^3.0.0",
+    "lottie-react": "^2.1.0",
+    "lottie-web": "^5.7.11",
     "notyf": "^3.9.0",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",

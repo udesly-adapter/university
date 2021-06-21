@@ -6,47 +6,12 @@ import SEO from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
 
-  const cmses = {};
-
-  posts.forEach(post => {
-    if (!cmses[post.fields.cms]) {
-      cmses[post.fields.cms] = []
-    }
-    cmses[post.fields.cms].push(post)
-  })
-
-  console.log(Object.keys);
-
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-       
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
-        {Object.keys(cmses).map(cms => {
-          
-          return <div>
-            <h1>{cms}</h1>
-            <ol style={{ listStyle: `none` }}>
-            {postsTemplate(cmses[cms])}
-          </ol>
-          </div>
-        })}
-        </div>
+      <SEO title="University" />
+      
     </Layout>
   )
 }
