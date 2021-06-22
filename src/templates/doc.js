@@ -6,7 +6,7 @@ import DocSeo from "../components/Documentation/DocSeo"
 import DocContent from "../components/Documentation/DocContent"
 import DocInternalNavigation from "../components/Documentation/DocInternalNavigation"
 import DocSidebar from "../components/Documentation/DocSidebar"
-import {DocContext} from '../components/Contexts/DocContext';
+import { DocContext } from '../components/Contexts/DocContext';
 
 
 const DocTemplate = ({ data, location, pageContext, path }) => {
@@ -14,17 +14,24 @@ const DocTemplate = ({ data, location, pageContext, path }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Doc`
   const { previous, next } = data
-  
+
   const githubUrl = data.site.siteMetadata.repoUrl + 'blob/main/docs/' + data.markdownRemark.fields.cms + "/" + data.markdownRemark.parent.relativePath;
- 
+
   return (
-    <DocContext.Provider value={{post, sidebar: pageContext.sidebar, path, previous, next}}>
+    <DocContext.Provider value={{ post, sidebar: pageContext.sidebar, path, previous, next }}>
+        <div className="only-mobile sidebar-mobile" style={{transform: 'translateX(-100%)'}}>
+          <DocSidebar
+          location={location}
+          cms={post.fields.cms}
+          sidebar={pageContext.sidebar}
+        />
+        </div>
       <DocLayout
         title={siteTitle}
         className={"content-page relative secondary"}
       >
         <DocSeo post={post} />
-        <div className="sticky-wrapper oy-auto">
+        <div className="sticky-wrapper oy-auto hide-mobile">
           <div className="content aside">
             <DocSidebar
               location={location}

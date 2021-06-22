@@ -1,5 +1,6 @@
 import React from "react"
 import DocNavigation from "./DocNavigation"
+import DocInternalNavigationMobile from "./DocInternalNavigationMobile"
 import "./doc-content.css"
 
 const DocContent = ({ post, previous, next, githubUrl }) => {
@@ -16,6 +17,10 @@ const DocContent = ({ post, previous, next, githubUrl }) => {
       <article className="doc-post">
         <header>
           <h1 id="top">{post.frontmatter.title}</h1>
+           <DocInternalNavigationMobile
+              headings={post.headings}
+              title={post.frontmatter.title}
+            />
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>

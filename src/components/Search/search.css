@@ -138,6 +138,7 @@ input::placeholder {
   font-weight: 500;
   line-height: 1.5;
   white-space: nowrap;
+  padding: 6px 0;
 }
 
 mark {

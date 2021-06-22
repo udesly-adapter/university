@@ -49,12 +49,38 @@
 }
 
 .navigation .logo {
-    width: 100px;
-    margin-right: 20px;
+    width: 90px;
+    margin-top: 8px;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
-.navigation a {
-    height: 100%;
+.navigation .logo:hover {
+    transform: scale(0.97);
+    opacity: 0.7;
+}
+
+.navigation .main {
+    padding: 7px 15px;
+    border-style: none;
+    border-width: 2px;
+    border-color: #6f39f8;
+    border-radius: 100px;
+    background-color: #8351ff;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    height: auto;
+}
+.navigation .main:hover {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.navigation a, .dropdown > div {
     color: #a0a0a0;
     font-size: 16px;
     line-height: 1.2;
@@ -62,15 +88,17 @@
     text-align: center;
     letter-spacing: -0.035em;
     text-decoration: none;
+    backface-visibility: hidden;
+    transition: all 300ms ease-in-out;
+    padding: 0 15px;
 }
 
-.navigation a:hover {
+.navigation a:hover, .dropdown:hover > div {
     color: #3c3c3b;
 }
 
+
 .navigation-dropdown-wrapper {
-    display: -ms-grid;
-    display: grid;
     height: 130px;
     min-width: auto;
     -ms-grid-rows: auto;
@@ -83,7 +111,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas: ".";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto;
     grid-template-rows: auto;
     border-radius: 10px;
@@ -104,7 +132,7 @@
     transform: translateX(-50%) rotate(90deg);
 }
 
-.dropdown-link {
+a.dropdown-link {
     height: 100%;
     min-width: 200px;
     padding: 0px;
@@ -141,27 +169,110 @@
     border-right: 1px solid #f3f3f3;
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
-    color: #283338;
-    font-size: 16px;
+    margin-bottom: 2px;
+    color: #303030;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
     position: relative;
     cursor: pointer;
 }
 
-.dropdown * {
+.dropdown, .dropdown * {
     cursor: pointer;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-link img {
+    padding: 6px;
+    width: 90px;
+    height: auto;
+}
+
+.dropdown::after {
+    content: " ";
+    height: 70px;
+    width: 100%;
+    position: absolute;
+}
+
+.dropdown:hover::after {
+    height: 150px;
+    top: 55px;
+}
+
+.dropdown-link.disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.dropdown-link.disabled * {
+    cursor: not-allowed!important;
+}
+
+.dropdown-link:hover {
+    background-color: #fafafa;
+}
+
 .navigation-dropdown-parent {
-    opacity: 0;
-    transform: translate3d(0px, 15px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    display: none;
     position:absolute;
-    top: 45px;
+    top: 85px;
+    animation: closeDropdown 0s ease;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    visibility: hidden;
 }
 
 .dropdown:hover .navigation-dropdown-parent {
-    display: block;
-    opacity: 1;
+    animation: openDropdown 0.3s ease;
+    animation-fill-mode: forwards;
+    pointer-events: initial;
+}
+
+
+@keyframes openDropdown {
+    from {
+        display: none;
+        opacity: 0;
+        transform: translate3d(0px, 15px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+    to {
+        opacity: 1;
+        display: block;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+}
+
+@keyframes closeDropdown {
+    from {
+        opacity: 1;
+        display: block;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+    to {
+        display: none;
+        opacity: 0;
+        transform: translate3d(0px, 15px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+    .only-on-desktop {
+        display: none;
+    }
+
+
+}
+
+header.udesly-doc-homepage-header {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    left: 0;
+    width: 100%;
 }

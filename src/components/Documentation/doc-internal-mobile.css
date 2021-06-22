@@ -1,0 +1,72 @@
+.internal-nav-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+}
+
+.internal-nav-mobile {
+    position: absolute;
+    top: 100%;
+    right: 8px;
+    animation: closeDropdown 0s ease;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    visibility: hidden;
+    background-color: white;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 4px -19px 35px 0 rgb(32 53 90 / 8%), 11px 11px 30px -10px rgb(32 53 90 / 15%);
+    position: relative;
+    width: 80vw;
+    margin-left: auto;
+    position: absolute!important;
+}
+
+.internal-nav-mobile.open {
+    display: block;
+    position: absolute;
+    z-index: 999;
+}
+
+.internal-nav-mobile a {
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+    color: #303030;
+}
+
+.internal-nav-mobile a:last-of-type {
+    border-bottom: 0;
+}
+
+.internal-nav-mobile::before {
+content:"\A";
+border-style: solid;
+border-width: 10px 15px 10px 0;
+border-color: transparent #fff transparent transparent;
+position: absolute;
+top: -16px;
+z-index: 9999999999;
+right: 2px;
+transform: translateX(-50%) rotate(90deg);
+
+}
+
+.internal-nav-mobile.open {
+    animation: openDropdown 0.3s ease;
+    animation-fill-mode: forwards;
+    pointer-events: initial;
+}
+
+.internal-nav-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+}

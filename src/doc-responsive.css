@@ -1,0 +1,117 @@
+@media screen and (min-width: 1023px) {
+    .only-mobile {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .hide-mobile {
+        display: none!important;
+    }
+
+    .doc-layout .sticky-wrapper {
+        display: none;
+    }
+
+    body[data-layout="doc"] header.doc {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+
+    .line-before::before, .line-after::after {
+        display: none;
+    }
+
+    .boxed-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxed-wrapper .logo {
+        margin: auto!important;
+        
+    }
+
+    body .boxed-wrapper .logo a {
+        justify-content: center!important;
+    }
+
+    body header.doc .boxed-wrapper .logo svg {
+        margin: 0;
+        height: 50px;
+    }
+
+    .main-columns > div:nth-child(2), .main-content-wrapper > div:nth-child(1) {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    body nav.external-navigation {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "previous"
+        "next";
+    }
+
+    .doc-post #top {
+        margin-top: 100px;
+    }
+
+    body .article-footer {
+        padding-top: 10px;
+    }
+
+    article header {
+        position: relative;
+    }
+}
+
+.sidebar-mobile {
+    position: fixed;
+}
+
+.menu-doc-open .sidebar-mobile {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100 - 70px);
+    z-index: 1;
+    background-color: white;
+    overflow-y: auto;
+}
+
+body[data-layout="doc"].menu-doc-open {
+    overflow: hidden;
+}
+
+.sidebar-mobile .doc-sidebar {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.sidebar-mobile .doc-sidebar img {
+    margin-left: 8px;
+}
+
+.sidebar-mobile .doc-sidebar .pages-tree {
+    padding-left: 0;
+}
+
+.sidebar-mobile .doc-folder-link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.sidebar-mobile .doc-folder-link.current {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}

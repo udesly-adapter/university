@@ -122,12 +122,13 @@ export const Search = () => {
 
   return (
     <div className="flex-center mw-80">
-      <span className="material-icons-outlined">search</span>
+      <span className="material-icons-outlined" onClick={() => setOpen(true)}>search</span>
       <input
         type="search"
         placeholder="Search..."
         onClick={() => setOpen(true)}
         readOnly={true}
+        className="hide-mobile"
       ></input>
       <div className={"search-backdrop" + (isOpen ? " open" : " hidden")}>
         <div className="search-box" ref={searchBox}>
