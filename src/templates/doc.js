@@ -4,10 +4,12 @@ import { graphql } from "gatsby"
 import DocLayout from "../components/Layouts/doc-layout"
 import DocSeo from "../components/Documentation/DocSeo"
 import DocContent from "../components/Documentation/DocContent"
-import DocInternalNavigation from "../components/Documentation/DocInternalNavigation"
 import DocSidebar from "../components/Documentation/DocSidebar"
 import { DocContext } from '../components/Contexts/DocContext';
 
+const DocInternalNavigation = React.lazy(() =>
+  import("../components/Documentation/DocInternalNavigation")
+)
 
 const DocTemplate = ({ data, location, pageContext, path }) => {
   // console.log(data, location, pageContext.sidebar, path)
@@ -16,6 +18,8 @@ const DocTemplate = ({ data, location, pageContext, path }) => {
   const { previous, next } = data
 
   const githubUrl = data.site.siteMetadata.repoUrl + 'blob/main/docs/' + data.markdownRemark.fields.cms + "/" + data.markdownRemark.parent.relativePath;
+
+  const isSSR = typeof window === "undefined"
 
   return (
     <DocContext.Provider value={{ post, sidebar: pageContext.sidebar, path, previous, next }}>
@@ -45,10 +49,15 @@ const DocTemplate = ({ data, location, pageContext, path }) => {
             <DocContent post={post} githubUrl={githubUrl} previous={previous} next={next} />
           </div>
           <div className="sticky-wrapper">
-            <DocInternalNavigation
+          {!isSSR && (
+        <React.Suspense fallback={<div />}>
+          <DocInternalNavigation
               headings={post.headings}
               title={post.frontmatter.title}
             />
+        </React.Suspense>
+      )}
+            
           </div>
         </div>
       </DocLayout>

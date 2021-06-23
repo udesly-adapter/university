@@ -1,7 +1,8 @@
 import React from "react"
-import DocNavigation from "./DocNavigation"
 import DocInternalNavigationMobile from "./DocInternalNavigationMobile"
 import "./doc-content.css"
+import DocNavigation from './DocNavigation'
+
 
 const DocContent = ({ post, previous, next, githubUrl }) => {
   const mtime = new Date(post.parent.modifiedTime)

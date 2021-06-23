@@ -118,19 +118,13 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        globPatterns: ["**/*.{js,json,jpg,svg,html,css}"],
-      },
-    },
-    {
       resolve: "custom-lunr-index",
       options: {
         // Lunr reference
         indexes: [
           ...["shopify", "jamstack", "wordpress", "ghost"].map(cms => ({
             name: cms,
-            filterNodes: node => node.fields?.cms === cms,
+            filterNodes: node => node.fields && node.fields.cms && node.fields.cms === cms,
           })),
         ],
         // Fields to be indexed

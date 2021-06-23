@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./doc-internal-mobile.css"
 
 
+
 const DocInternalNavigation = ({ headings }) => {
 
   const handleScrollClick = (e, id) => {

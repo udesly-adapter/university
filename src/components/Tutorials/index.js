@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './tutorials.css';
 import 'plyr/dist/plyr.css';
-import Plyr from 'plyr';
+import Video from './video';
+
 import { StaticQuery, graphql } from "gatsby"
-import { Link } from 'gatsby';
+
 
 const query = graphql`query MyQuery {
     allYoutubeVideo {
@@ -26,29 +27,10 @@ const Tutorials = ({ videos }) => {
 
     const [video, setVideo] = useState(videos[0]);
 
-    useEffect(() => {
-      
-        if (document.body.plyrPlayer) {
-            document.body.plyrPlayer.destroy();
-            const player = document.getElementById('player');
-            player && player.setAttribute('data-plyr-embed-id', video.video_id);
-            
-        }
-        document.body.plyrPlayer = new Plyr('#player',{
-            youtube: {
-                noCookie: true
-            }
-        });
-        
-    }, [video])
-
-
     return (
         <section className="tutorials">
             <div className="main-video">
-                <div className="plyr__video-embed" id="player"  data-plyr-provider="youtube" data-plyr-embed-id={video.video_id}>
-                    
-                </div>
+                <Video video={video}/>
             </div>
             <div className="other-videos">
                 {videos.filter(v => v.video_id !== video.video_id).map( v => {
