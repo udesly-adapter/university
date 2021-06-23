@@ -276,3 +276,11 @@ header.udesly-doc-homepage-header {
     left: 0;
     width: 100%;
 }
+
+.logo-home path, .hover-color-logo path {
+    transition: fill 0.3s ease-in;
+}
+
+.logo-home:hover [fill="#3C3C3B"], .hover-color-logo:hover [fill="#3C3C3B"] {
+    fill: #919191;
+}

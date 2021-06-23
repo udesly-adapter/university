@@ -49,10 +49,10 @@
   /* 1.200 Minor Third Type Scale */
   --fontSize-0: 0.833rem;
   --fontSize-1: 1rem;
-  --fontSize-2: 1.2rem;
-  --fontSize-3: 1.44rem;
-  --fontSize-4: 1.728rem;
-  --fontSize-5: 2.074rem;
+  --fontSize-2: 1.1rem;
+  --fontSize-3: 1.24rem;
+  --fontSize-4: 1.428rem;
+  --fontSize-5: 1.574rem;
   --fontSize-6: 2.2rem;
   --fontSize-7: 2.986rem;
   --color-primary: #6f39f8;
@@ -503,6 +503,7 @@ small {
 
 .w100 {
   width: 100%;
+  height: 100%;
 }
 
 .oy-auto {

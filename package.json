@@ -30,6 +30,7 @@
     "lottie-react": "^2.1.0",
     "lottie-web": "^5.7.11",
     "notyf": "^3.9.0",
+    "plyr": "^3.6.8",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "lunr": "^2.3.9",
+    "node-fetch": "^2.6.1",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -51,6 +53,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev-local": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

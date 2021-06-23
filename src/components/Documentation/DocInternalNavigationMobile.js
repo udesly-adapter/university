@@ -17,7 +17,7 @@ const DocInternalNavigation = ({ headings }) => {
 
   return (
     <>
-       <button className="internal-nav-button" onClick={() => setOpen(!open)}>
+       <button className="internal-nav-button only-mobile" onClick={() => setOpen(!open)}>
           <span className="material-icons-outlined" style={{fontSize: 16, marginLeft: 0}}>format_align_right</span>
           {open && <div className="internal-nav-backdrop"></div>} 
         </button>

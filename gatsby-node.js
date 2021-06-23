@@ -1,4 +1,5 @@
 const path = require(`path`)
+const fetch = require('node-fetch');
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 function slugify(text)
@@ -9,6 +10,51 @@ function slugify(text)
     .replace(/\-\-+/g, '-')         // Replace multiple - with single -
     .replace(/^-+/, '')             // Trim - from start of text
     .replace(/-+$/, '');            // Trim - from end of text
+}
+
+async function fetchYoutubeVideos() {
+  const url = "https://feed2json.org/convert?url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=UCcuEG-IjaeHRgePmiJ0f8GA");
+
+  const {home_page_url, items} = await(await fetch(url)).json();
+  return {
+    url: home_page_url,
+    videos: items.slice(0, 5)
+  }
+}
+
+exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => {
+  const { createNode } = actions
+
+  // Data can come from anywhere, but for now create it manually
+  
+
+  const {url, videos} = await fetchYoutubeVideos();
+
+  for(let video of videos) {
+
+    video.video_id = video.guid.replace('yt:video:', '');
+
+    const nodeContent = JSON.stringify(video)
+
+    const nodeMeta = {
+      id: createNodeId(`video-${video.guid}`),
+      parent: null,
+      children: [],
+      data: video,
+      internal: {
+        type: `YoutubeVideo`,
+        mediaType: `text/html`,
+        content: nodeContent,
+        contentDigest: createContentDigest(video)
+      }
+    }
+  
+    const node = Object.assign({}, video, nodeMeta)
+
+    createNode(node)
+  }
+
+  
 }
 
 async function getDocsForCMS(cms, graphql) {

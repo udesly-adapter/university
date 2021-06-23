@@ -76,6 +76,9 @@
 
 .sidebar-mobile {
     position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
 }
 
 .menu-doc-open .sidebar-mobile {

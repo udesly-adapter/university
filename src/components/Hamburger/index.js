@@ -17,14 +17,14 @@ const Hamburger = () => {
   const toggleMenu = useCallback(() => {
     if (!open) {
       line1.current.animate([
-        { transform: "translateY(5.2px) rotate(-45deg)" }
+        { transform: "translateY(6px) rotate(-45deg)" }
       ], {
         duration: 300,
         fill: "forwards",
         easing: "ease-in-out"
       })
       line3.current.animate([
-        { transform: "translateY(-5.2px) rotate(45deg)" }
+        { transform: "translateY(-6px) rotate(45deg)" }
       ], {
         duration: 300,
         fill: "forwards",

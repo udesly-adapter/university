@@ -1,5 +1,5 @@
 import React, { useRef, useCallback, useState, useEffect } from 'react';
-import './hamburger.css';
+import '../Hamburger/hamburger.css';
 
 const HamburgerDoc = () => {
 
@@ -21,14 +21,14 @@ const HamburgerDoc = () => {
         easing: "ease-in-out"
       })
       line1.current.animate([
-        { transform: "translateY(5.2px) rotate(-45deg)" }
+        { transform: "translateY(6px) rotate(-45deg)" }
       ], {
         duration: 300,
         fill: "forwards",
         easing: "ease-in-out"
       })
       line3.current.animate([
-        { transform: "translateY(-5.2px) rotate(45deg)" }
+        { transform: "translateY(-6px) rotate(45deg)" }
       ], {
         duration: 300,
         fill: "forwards",
