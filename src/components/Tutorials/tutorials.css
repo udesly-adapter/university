@@ -38,23 +38,33 @@
 
 .other-videos img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    opacity: 0.4;
+    transition: opacity 300ms ease-in-out;
 }
 
 .video-thumbnail {
     position: relative;
     cursor: pointer;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    height: 160px;
 }
 
 .video-thumbnail button {
     display: block;
-    opacity: 0;
+    opacity: 0.7;
+    transition: opacity 300ms ease-in-out;
 }
 
 .video-thumbnail:hover button {
-    opacity: 0.9;
+    opacity: 1;
+}
+
+.video-thumbnail:hover img {
+    opacity: 0.8;
 }
 
 .main-button {
