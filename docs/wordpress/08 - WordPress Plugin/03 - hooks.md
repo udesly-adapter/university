@@ -571,7 +571,7 @@ function mytheme_change_magic_register_message($message, $register_url) {
  return sprintf("Hello! Register at MySite! by visiting this url: <a href=\"%s\" target=\"_blank noreferrer noopener\">Register</a>", $register_url);
 }
 
-add_filter('udesly/ajax/login/email_message', 'mytheme_change_magic_register_message', 10, 2);
+add_filter('udesly/ajax/register/email_message', 'mytheme_change_magic_register_message', 10, 2);
 ```
 
 ### Edit Email Message
