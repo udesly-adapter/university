@@ -462,7 +462,7 @@ apply_filters('udesly/ajax/login/email_message', string $message, string $login_
 ```php
 
 function mytheme_change_magic_login_message($message, $login_url) {
- return sprintf("Hello! Login at MySite! by visiting this url: <a href=\"%s\" target=\"_blank noreferrer noopener\">Login</a>", $login_url)
+ return sprintf("Hello! Login at MySite! by visiting this url: <a href=\"%s\" target=\"_blank noreferrer noopener\">Login</a>", $login_url);
 }
 
 add_filter('udesly/ajax/login/email_message', 'mytheme_change_magic_login_message', 10, 2);
@@ -486,7 +486,7 @@ apply_filters('udesly/ajax/register/email_message', string $message, string $reg
 ```php
 
 function mytheme_change_magic_register_message($message, $login_url) {
- return sprintf("Hello! Register at MySite! by visiting this url: <a href=\"%s\" target=\"_blank noreferrer noopener\">Register</a>", $register_url)
+ return sprintf("Hello! Register at MySite! by visiting this url: <a href=\"%s\" target=\"_blank noreferrer noopener\">Register</a>", $register_url);
 }
 
 add_filter('udesly/ajax/login/email_message', 'mytheme_change_magic_register_message', 10, 2);
@@ -510,7 +510,7 @@ apply_filters('udesly/ajax/edit_email/email_message', string $message, string $u
 ```php
 
 function mytheme_change_edit_email_message($message, $url) {
- return sprintf("Hello! Confirm your email change by visiting this url: <a href=\"%s\" target=\"_blank noreferrer noopener\">Confirm</a>", $url)
+ return sprintf("Hello! Confirm your email change by visiting this url: <a href=\"%s\" target=\"_blank noreferrer noopener\">Confirm</a>", $url);
 }
 
 add_filter('udesly/ajax/edit_email/email_message', 'mytheme_change_edit_email_message', 10, 2);
