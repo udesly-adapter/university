@@ -567,7 +567,7 @@ apply_filters('udesly/ajax/register/email_message', string $message, string $reg
 
 ```php
 
-function mytheme_change_magic_register_message($message, $login_url) {
+function mytheme_change_magic_register_message($message, $register_url) {
  return sprintf("Hello! Register at MySite! by visiting this url: <a href=\"%s\" target=\"_blank noreferrer noopener\">Register</a>", $register_url);
 }
 
