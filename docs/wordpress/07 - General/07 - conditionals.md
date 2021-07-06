@@ -2,7 +2,7 @@
 title: "Conditionals"
 ---
 
-Sometime is usefull to show/hide some elements according to certain conditions. While CMS conditions are all automatically converted, there are some conditions that Webflow doesn't supports yet, and can instead be used with custom attributes.
+Sometime is useful to show/hide some elements according to certain conditions. While CMS conditions are all automatically converted, there are some conditions that Webflow doesn't supports yet, and can instead be used with custom attributes.
 
 > Note that the elements are not visually hidden, they will not be present at all in your HTML!
 

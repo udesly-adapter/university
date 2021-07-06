@@ -2,13 +2,13 @@
 title: "Shortcodes"
 ---
 
-A **shortcode** lets you do nifty things with very little effort. Think of a shortcode as a *shortcut* to add features to your website that would normally require lots of complicated code and technical ability.
+A **shortcode** lets you do nifty things with very little effort. Think about a shortcode as a *shortcut* to add features to your website that would normally require lots of complicated code and technical ability.
 
-A shortcode is written inside two square brackets. WordPress includes by default several shortcodes built-in that you can find on the [**official codex**](https://codex.wordpress.org/Shortcode).
+A shortcode is written inside two square brackets. WordPress includes by default several built-in shortcodes that you can find on the [**official codex**](https://codex.wordpress.org/Shortcode).
 
 For example, the ```[youtube https://www.youtube.com/watch?v=mzw6OGsoYSc]``` shortcode can be used to add a youtube video in page or post.
 
-In Webflow you can add shortcodes on every page you want, but to do it you need to use custom attributes. Use a text block and add the attribute:
+In Webflow you can add shortcodes on every page you want, but to do that you need to use custom attributes. Use a text block and add the attribute:
 
 <custom-attribute name="shortcode" value="true"></custom-attribute>
 

@@ -2,7 +2,7 @@
 title: "Restricted Pages"
 ---
 
-In previous versions of Udesly App, you could restrict pages using the Rule functionality that was included in the WordPress plugin. This functionality has been removed, 99% of the times the only rule that was getting used was to restrict page for not logged in users. 
+In the previous versions of Udesly App, you could restrict pages using the Rule functionality that was included in the WordPress plugin. This functionality has been removed, 99% of the times the only rule that was getting used was to restrict page for not logged in users. 
 Webflow will introduce this page restriction later this year, and it will be so automatically configured by the extension. 
 Until that feature will be available there is a simple workaround, you just need to copy and paste one of the following elements inside the before ```</body>``` section of Webflow.
 
@@ -39,7 +39,7 @@ will redirect users that are logged in to the home page
 
 ### To
 
-The attribute to, allows you to decide where to redirect the user
+The attribute **to** allows you to decide where to redirect the user
 
 For example you can set the attribute ```to="/login"```
 

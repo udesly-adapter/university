@@ -48,7 +48,7 @@ More details about E-Commerce and pages can be found on the E-Commerce section.
 
 ### CMS Collection Pages
 
-Since in WordPress, you can make everything you want, the Udesly App translates all different CMS Collections either as different *Custom post Types* or *Custom Taxonomies*, based on the CMS field structure, so every page that you can find inside the section **CMS Collection Pages**, will be converted as a *single template* or a *taxonomy template*.
+Since in WordPress you can make everything you want, the Udesly App translates all different CMS Collections either as different *Custom post Types* or *Custom Taxonomies*, based on the CMS field structure, so every page that you can find inside the section **CMS Collection Pages**, will be converted as a *single template* or a *taxonomy template*.
 
 For example if you create a CMS collection called **Event** in Webflow, you will find all single events inside the url structure /event/event-slug, and this url will use the page **Event Template** that you find under *CMS Collection Pages*.
 
@@ -65,7 +65,7 @@ Below you can find a list of page slugs or patterns that will allow you to defin
 ### CMS
 
 <ol>
-<li> <strong>archive-{post-type}</strong>: used to create the template used for the archive of the post-type, for example if you created a CMS collection in Webflow that has as slug "event", and you want to modify the page used as archive of all events (that by default can be found at the url "/event"), your page slug should be "archive-event";
+<li> <strong>archive-{post-type}</strong>: used to create the template for the archive of the post-type, for example if you created a CMS collection in Webflow that has as slug "event", and you want to modify the page used as archive of all events (that by default can be found at the url "/event"), your page slug should be "archive-event";
 </li>
 <li> <strong>search-{post-type}</strong>: used to create results pages specific to only one post type. For example if you want to create a search form that searches only on the CMS collection "event" and you want to create a search page just for that page you have to make 3 steps:
 <ul>

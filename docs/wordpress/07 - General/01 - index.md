@@ -2,7 +2,7 @@
 title: "Introduction"
 ---
 
-In this section you will find all generic functionalities specific of WordPress that do not fall into any other section, like shortcodes, widgets and so on. All functionalities that unfortunately cannot still be automatically converted, so you need custom attributes for that. Just as a reminder if you skipped the [**reading tips**](/wordpress/intro/reading-tips).
+In this section you will find all generic functionalities specific of WordPress that do not fall into any other section, like shortcodes, widgets and so on. Not all the functionalities can be automatically converted, so you need custom attributes for that. Just as a reminder if you skipped the [**reading tips**](/wordpress/intro/reading-tips).
 
 
 Custom attributes are a special way to *provide additional information* to elements. They are made of 2 parts:

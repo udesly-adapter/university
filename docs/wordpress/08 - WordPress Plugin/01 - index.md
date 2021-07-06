@@ -2,9 +2,9 @@
 title: "Udesly Plugin"
 ---
 
-Your Webflow theme will work thanks to our [**Udesly WP Plugin**](https://github.com/udesly-adapter/udesly-wp-app), that is an open source plugin, you can find on Github. So if you have any issue, you can also open up a bug there. (Or make a pull request 😇).
+Your Webflow theme will work thanks to our [**Udesly WP Plugin**](https://github.com/udesly-adapter/udesly-wp-app), that is an open source plugin you can find on Github. So if you have any issue, you can also open up a bug there. (Or make a pull request 😇).
 
-This plugin will automatically be installed once you activate the first time your Webflow plugin!
+This plugin will automatically be installed once you have activated your Webflow theme for the first time!
 
 Just follow these steps:
 
@@ -18,7 +18,7 @@ Just follow these steps:
 
 The plugin is responsible of your data and pages import. It will listen to some file changes and automatically trigger the Data import.
 
-After activating the plugin for the first time is adviced to go to the WordPress dashboard and wait few seconds;
+After activating the plugin for the first time is adviced to go to the WordPress dashboard main page and wait for a few seconds;
 
 You'll see a notice telling you that data is being imported;
 

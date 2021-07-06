@@ -12,6 +12,8 @@ Converting a site is very very simple, below you will find a guide divided into 
 3.  The extension will add attributes and download a configuration file;
 4.  After the configuration has been downloaded you can export your Webflow *.zip*;
 
+![conversion steps Webflow](/images/extension-shopify.png)
+
 <small>* You can also get an eCommerce template from the Marketplace, possibly made by Udesly 🥰</small>
 
 ## Udesly App
@@ -21,7 +23,7 @@ Converting a site is very very simple, below you will find a guide divided into 
 3. Press on **Convert**;
 4. At the end of the conversion the Udesly App will download you 2 files: a .zip including your Shopify theme, a file with all the Webflow data that is ready to be imported in Shopify;
 
-
+![conversion steps App](/images/conversion-app.png)
 
 ## Shopify
 
@@ -30,5 +32,5 @@ Converting a site is very very simple, below you will find a guide divided into 
 3. Import your data;
 4. Enjoy! 🍻
 
-
+![conversion steps Shopify](/images/webflow-importer.png)
 

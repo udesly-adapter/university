@@ -3,14 +3,14 @@ title: Glossary
 description: Glossary
 ---
 
-Below you can find a list of some of the most used terms inside the documentation that are specific to Webflow or to Shopify, and can help you get a better understanding of what you are reading.
+Below you can find a list of some of the most used terms inside the documentation that are specific to Webflow or to WordPress and can help you get a better understanding of what you are reading.
 
 
 ## Webflow
 
 ### Page Slug
 
-is the user friendly and URL valid name of your page in Webflow. Inside slugs you can not use spaces, accented characters, special characters or uppercase characters. You can modify your page slug, inside page settings under the name **Slug**
+Is the user friendly and URL valid name of your page in Webflow. Inside slugs you can not use spaces, accented characters, special characters or uppercase characters. You can modify your page slug, inside page settings under the name **Slug**
 
 ![webflow page slug setting](/images/webflow-slug.png)
 

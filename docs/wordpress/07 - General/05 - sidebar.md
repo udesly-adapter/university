@@ -18,7 +18,7 @@ The *Sidebar Name* is up to you, it can be everything you want, the Udesly App w
 
 ### Widgets
 
-A widget adds content and features to a widget area (also called a sidebar). Widget areas provide a way for users to customize their site. Widgets can be really helpful in helping your visitors to navigate your site and encouraging them to take actions like signing up for your newsletter or following you on social media. You can widgets inside Sidebar (like explained in the previous paragraphs). But you can also use widgets alone without a sidebar. To do it, you should add a *Div Block* with the attribute
+A widget adds content and features to a widget area (also called a sidebar). Widget areas provide a way for users to customize their site. Widgets can be really helpful in helping your visitors to navigate your site and encouraging them to take actions like signing up for your newsletter or following you on social media. You can use widgets inside Sidebar (like explained in the previous paragraphs) but you can also use widgets alone without a sidebar. To do that, you should add a *Div Block* with the attribute
 
 <custom-attribute dynamic name="widget" value="Widget_Class_Name"></custom-attribute>
 
