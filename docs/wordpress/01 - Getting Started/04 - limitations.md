@@ -10,7 +10,7 @@ Below you can find a list of limitations that hopefully will be resolved in next
 
 ## Webflow
 
-* Search Results page is still not available as automatic conversion;
+* ~~Search Results page is still not available as automatic conversion;~~
 
 
 ## Udesly App

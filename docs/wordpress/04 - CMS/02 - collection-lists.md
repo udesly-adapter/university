@@ -61,7 +61,7 @@ There are some special collection lists that cannot be configured using the Webf
 
 ### Main Query
 
-The “main query” is whatever WordPress uses to build the content on the current page. For instance, on search results page the main query, is the query that shows all the current results.
+The “main query” is whatever WordPress uses to build the content on the current page. For instance, on search results page the main query is the query that shows all the current results.
 
 Since it's pretty difficult to understand automatically if one of the collection list is supposed to be a main query (think about a page that has multiple collection lists all related to the same scope of the page), the Udesly app never makes this assumption. But if in the remote case you need to be sure that your collection list is associated to the main query, you just have to add the following attribute on the collection list wrapper:
 
@@ -91,7 +91,7 @@ To show Related products you just have to create a list of products in Webflow a
 
 This query is specific to WooCommerce and can be used in any page of Webflow. This query has no equivalent in Webflow, since actually the cross-sells are manually selected product by product in WooCommerce, and are based on the products that your user actually have inside the Cart.
 
-To show Cross sells product you just have to create a list of products in Webflow and add the following attribute on the collection list wrapper:
+To show Cross sells products you just have to create a list of products in Webflow and add the following attribute on the collection list wrapper:
 
 <custom-attribute name="query-name" value="cross-sells"></custom-attribute>
 
@@ -100,6 +100,6 @@ To show Cross sells product you just have to create a list of products in Webflo
 
 This query is specific to WooCommerce and can be used in any page of Webflow. This query has no equivalent in Webflow, since "featured" is a term of a custom taxonomy called "product_visibility" (A total mess there by WooCommerce)
 
-To show Cross sells product you just have to create a list of products in Webflow and add the following attribute on the collection list wrapper:
+To show Featured products you just have to create a list of products in Webflow and add the following attribute on the collection list wrapper:
 
 <custom-attribute name="query-name" value="featured-products"></custom-attribute>

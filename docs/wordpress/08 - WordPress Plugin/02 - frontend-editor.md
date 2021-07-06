@@ -8,7 +8,7 @@ You can disable the frontend editor from the Udesly Adapter. It automatically ta
 ![](/images/frontend-editor.png)
 
 
-To access the frontend editor, you just need to click the button **Open Frontend Editor**, that you can find while you navigate the frontend of your site
+To access the frontend editor, you just need to click the button **Open Frontend Editor** that you can find while you navigate the frontend of your site, logged as admin.
 
 ![](/images/open-frontend-editor.png)
 

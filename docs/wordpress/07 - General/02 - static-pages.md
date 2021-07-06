@@ -2,7 +2,7 @@
 title: "Static Page Elements"
 ---
 
-You can still give your static pages, some dynamicity with the elements you find below!
+You can still give your static pages some dynamicity with the elements you find below!
 
 The fields you will find below will be modifiables from WordPress Admin panel!
 

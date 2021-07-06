@@ -8,13 +8,13 @@ The **Udesly App** is a web app that allows you to *adapt* your Webflow theme in
 
 ## Why?
 
-Why you should use the *Udesly App* in first case? 🤔
+Why you should use the *Udesly App* in the first place? 🤔
 
-Webflow, it's an amazing design tool! 🎨 And we wanted to use Webflow everyday and in every kind of projects!
+Webflow! an amazing design tool! 🎨 And we wanted to use Webflow everyday and in every kind of projects!
 
-Every tool has it's own *pros*, *cons* and *best use cases*, but we didn't want to give up on Webflow at least as design tool when our customers needed a different CMS or needed to cover functionalities not yet available. 
+Every tool has its own *pros*, *cons* and *best use cases*, but we didn't want to give up on Webflow at least as design tool when our customers needed a different CMS or needed to cover functionalities not yet available. 
 
-That's why we built up the **App**, to use Webflow **always**... And also to not bother up our devs with boring task like *writing html markup*...
+That's why we built up the **App**, to use Webflow **all the time**... And also to not bother up our devs with boring task like *writing html markup*...
 
 It's just a way to mix up different tools and get the best of all worlds! ✨
 

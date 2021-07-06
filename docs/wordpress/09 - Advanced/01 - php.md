@@ -2,7 +2,7 @@
 title: "PHP Elements"
 ---
 
-Naturally due to the nature of WordPress that is infinitely extensible there are surely some advanced stuffs that is still not covered by the automatic conversion or by the attributes conversion. But don't worry, with PHP elements you are free to make anything you wish, and add your own PHP code directly in Webflow!
+Due to the nature of WordPress that is infinitely extensible there are surely some advanced stuffs that are still not covered by the automatic conversion or by the attributes conversion. But don't worry, with PHP elements you are free to make anything you wish, and add your own PHP code directly in Webflow!
 
 > Do it at your own risks, the Udesly App doesn't ensure that the PHP code you inject will be valid, so it is not responsible for bricked servers, fires or thermonuclear wars ☢️. So be sure that the code you are writing is correct! (Or at least be sure you have an FTP access in order to rollback the theme if WordPress explodes 💣)
 

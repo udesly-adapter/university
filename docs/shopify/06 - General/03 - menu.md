@@ -1,0 +1,26 @@
+---
+title: "Menu"
+---
+
+If you want to manage some links by Shopify you can create Dynamic Menus by adding simply the attribute on any link element:
+
+<custom-attribute dynamic name="menu" value="menu-handle"></custom-attribute>
+
+This link where you added the attribute will be repeated once for any link you added inside the Menu created in Shopify (Only first level of nesting). So if you want to make dynamic the links inside a dropdown, you have to add the attribute on the first Dropdown Link and remove all the others.
+
+Menus in Shopify can be created by following the path Online Store > Navigation. Don't forget to create the menu in Shopify and take note of the handle of the menu, otherwise your menu will not work at all.
+
+![shopify menu handle](/images/shopify-menu-handle.png)
+
+<copy-element name="Menu">ICU3QiUyMjB0eXBl4YCnJSQzQeKApjQwdyBlYmZsb3cgJTJGWHNjQHBEYXRh4oC+JDJD4YGLcGF5UGxvYWTlgY7jgZ5Abm9kZXPlgZ9ENULkgLRfaeaBgyAyMjliYmUgNjE5NS1hIDUzZC1hZCAwYS1hM2MgMi04ZTkyIDE3NTc2MiQyYueCgHRhZyPngqrogpZjbGFzMnPqgoU1ROWAuWggaWxkcmVuT+iCn++CkO+CkOGCkGPihI4j5oGk64SeTGlua03nhI1k5YSa5oSKbOWAvS3mhJpt4YSa54WYZXggdGVybmFsOeeFi3Vy44Cs5IW1Mioz4oaBN+WDl3hhKHR0cu2Fk25hIm3ohqVtZW51QeeGlHZhbHXsgLsgLWhhbmRsX+OHlOGBs+GEreGBueSBvO+Gnl/vhp7vhp7khK7khp7hg6XkiKk8dHLigpPjgp7niLpNJ+WCteSCk+OIr3N0eU5s74a44oeb4YePdO+HkEAyMml4Me+HpUfhgLXhib3oibBpbuGFqSBhY3Rpb25D74iS4YaHdmVu74G6Q+KJjeOBkUxpc+2Cl0fnhLrihbXsh691buKHsSBlZFN5bWIgb2xDb3VuJeWEnTDliJ9yb3BYcGVk4oiz5YyA5oC5IHluQmluZCBSZW1vdmVeZO+BmeKBgOKCqe+BhOqBvSBwYWdpbmEv4oSF74Gn4YKg44ew</copy-element>
+
+## Mega Menu
+If you want to manage a menu created with at most 1 level of nested menus, you can add on a div the attribute:
+
+<custom-attribute dynamic name="mega-menu" value="menu-handle"></custom-attribute>
+
+Inside this div, you have to add 1 link and 1 dropdown. These elements will be combined based on your menu structure, but note that only 1 level of nesting is supported! Menus in Shopify can be created by following the path Online Store > Navigation. Don't forget to create the menu in Shopify and take note of the handle of the menu, otherwise your menu will not work at all.
+
+![shopify menu handle](/images/shopify-menu-handle.png)
+
+<copy-element name="Mega Menu">ICU3QiUyMjB0eXBl4YCnJSQzQeKApjQwdyBlYmZsb3cgJTJGWHNjQHBEYXRh4oC+JDJD4YGLcGF5UGxvYWTlgY7jgZ5Abm9kZXPlgZ9ENULkgLRfaeaBgyAyMmJhNjQgZjRjOS04IDVkYS1iNSA5ZS02MmMgNi1kYTgyIDA3MWU2MiYw44Ke44KAdGFnMeeCqmRpdueCmGMwbGFzc+qChzIgMjM4MzcxIDU5MC1mZCBlNy0yNjIgMy00MmNmIC1jNDMwNSA1ZWQ5ODEp44OINUTlgaNoaUBsZHJlbuqBpCA2NDIzYTkgZmItZDU4IDktMmRmYSAtOTllZC0gMmYyM2RmIGU1MDc4MyHnhJxmYjk5NSA1M2UtYTIgNmUtZjIyIDAtMDdmZCAtZDQ4ZjdQOGMyYeGEhuqCkSHrhbdCbG9ja13nhadk5YW05oWk74SX5YaPQHhhdHRy7YW8KG5hbeiHjm1lIGdhLW1lbiJ154eCdmFsdSHqgYBudS1oYShuZGzjiII3RF/ihK/hgKbhgKnhh7Dvh4zvhLBf74Sw6YSw6oeM6ImC74eK74agV++GoO+GoOqGoDTvhbPmi4o4TGlu74Wy54q2bDvlgL3mi4Zt4YuG54yEZSB4dGVybmFSbOeLt3Vy44Cs5IyhXjLjiJPkhYXvhYjvhYjviZgv6oOY5Iu04YKP5I2/dHJX4oa744eG546QTeWHne+Gsl/kjq/vipXvipXkipXvjZ7vjZ4/74a074y05I2474yH74yHNC/jkKDvjLTvjLTjjLQ1MSPvjLTmkotEcm9wIGRvd25XclBhcHBl44yI74y+O++MvumQtWTlgaDqkq5oJG925IGqM0FmKGFsc+WGj2RlSGxheeSUgzDvjr1YMjJ36IKh5Iy54YuxV+iOmeOVhOKPki3pgb3jlLJd6Y+uLemCg+GVs+GChu+Jo1/vh7nvka7vhofvlLfvlLfvjo1f75SN74e575Og6JOg6Jap75SNOe+UjTRm75SN7oe5VFhvZ2fkkpnvlJbvlJZX74e47Ie465uEdOeBuO+Phl/vjZzvl5HvhJHvmprvmprvk7An75mw65SK652wSWNvJ+Oak++YmOKemndpZCxnZeWQve+EiDIyPmnqgZzmgK3knLzljZstX++Eq++Xue+Rp++bnOmHr++epV/vnqXvl7vvnbvvkafvnY7lkLpf442F752O752O752O76GF75aJX+OWie+ch++Vte+fqu2CvO+Xn1/vl5/nk6Tvl6Pvl6PvoZjulYRZ76ShbmHvpKHvnbfvo7df75ej76OK45a26JOe76O376O3LjXom6zvpKTvpKQ1NkPvpKTumJBMaXPjnLE/76Sr7qSr6oSh75iN7quZbF/lgbbvn5nvna/vp6TvhLrvqq1f76SB76SB76qB752t76mU5J2AX+Oqge+plOyFkO+kiemaue+cpS/vhLjkpYfvm7rmnZJyZV/jl6rvpJ3vqYXvorPvrKjrg7RX76Sd76Sd5aejMOOhg++qs1/vpKHvrpbvir/vqrPvsZ3vqrNX76Sf77CG76OyNe+whu+Mgl/vqrvvh5Lvm7/vh5Lvoqzvh5Jf76uP76+376ml77Oa6oO076uPX++rj+aHkuOkne+xpe+rk++1iF/qkYTvuJHvsaXvsaXvt6Xvq5Fb77a446qkN++2uO+StO+xrV/vjoTvorHvjoTvqZ7vjoTvsoFf77ap77CX77qM6oO077KB77KBJ+aOhOaztea8r3N0eUJs77+YX2lk5YCyIDIyMzgzNyAxNTkwLWYgZGU3LTI2IDIzLTQyYyBmLWM0MzAgNTVlZDk4MjHjgY0yQ+GBpWYoYWtl5IGsZmEsbHPhgKvigLV0eSZw5YC14YKHY2xhJHNz54GQbmFtIeiAu0RpdiUyIDBCbG9ja0HrgYFzcGFj6IGhQeeCjGNvbWLvgLYgMnN0eWxlLExl5IKE44OhZGlAc3BsYXnjg64gMGZsZXglJjPhhITjgKotZGkgcmVjdGlvIm7kgL5jb2x1Jm3hgKzngYB3cmEucOSBmeSAquKBmWFsIGlnbi1pdChlbXPkgbRzdEByZXRjaOqAviBjb250ZW4idOiClC1zdGEucuGAsOKFvuSFi3ZhQHJpYW505oOIKeGGmDdE5YO5aGlAbGRyZW7ohrVCNeWAunNlbOGDjyRvcuSHj251bE5s4oGV5oC+4YW5ZeeBsFHpgZZpeDHvgavhgLUv44Wq5IKa4YGE4YOQcmEj44Sr74GiMjJldi/hg63vgbrhgpLjhZxMaS5z7YKX4YOq5oOtbWUkdGHqgol1bmwgaW5rZWRTIHltYm9sQ0xvdeGFhuOKnTDkiaIgZHJvcHBlPGRM4YGF5Yej5oC5eSBuQmluZFIgZW1vdmVkP++BmeKBgOKCqe+BhOqBvXBAYWdpbmHiiJAn74Gn4YKg44OW</copy-element>

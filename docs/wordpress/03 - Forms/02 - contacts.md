@@ -2,7 +2,7 @@
 title: "Contact"
 ---
 
-Contact forms can be used to collect any type of data or to let your user send you a message without exposing directly the email of your business!
+Contact forms can be used to collect any type of data or to let your user to send you a message without exposing directly the email of your business!
 
 > To declare a contact form, set as **Form Name** the value **Contact**. The form must contain at least one input **type email**!
 

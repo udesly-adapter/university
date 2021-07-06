@@ -9,11 +9,12 @@ Converting a site is very very simple, below you will find a guide divided into 
 
 1.  Design your theme in Webflow, with CMS, eCommerce or static*; 
 2.  After you are done and ready to convert, open up our extension and click on **Configure Attributes**;
-![](/images/wf-to-wp-attributes.png.png)
 3.  The extension will add attributes and download a configuration file;
 4.  After the configuration has been downloaded you can export your Webflow *.zip*;
 
 <small>* You can also get a template from the Marketplace, possibly made by Udesly 🥰</small>
+
+![](/images/wf-to-wp-attributes.png.png)
 
 ## Udesly App
 
@@ -22,6 +23,7 @@ Converting a site is very very simple, below you will find a guide divided into 
 3. Press on **Convert**;
 4. At the end of the conversion the Udesly App will allow you to download the zip;
 
+![conversion steps App](/images/conversion-app.png)
 
 ## WordPress
 

@@ -4,11 +4,11 @@ title: "Dynamic Menus"
 
 WordPress has a cool feature that allows you to add dynamic menus and control them from the admin panel! 
 
-You can find your Menus from *Appearance » Menus*.
+You can find your Menus under *Appearance » Menus*.
 
 ![](/images/wp-menu.png)
 
-Every Menu has it's own Name. You must create it in WordPress and use the same name in the attributes below in order to indicate which menu you want to show
+Every Menu has its own Name. You must create it in WordPress and use the same name as the attributes below in order to indicate which menu you want to show.
 
 
 ## Simple One Level Menu
@@ -26,7 +26,7 @@ Don't forget that the *Menu Name* must correspond to the Menu you created in Wor
 
 ## One Level Menu with Images and Subtitles
 
-WordPress allows for each link to add also a subtitle and an Icon, this can be usefull to create more dynamic menus, that have more infos.
+WordPress also allows for each link to add a subtitle and an icon. This can be useful to create more dynamic menus, including more infos.
 
 To create such a menu add on a *Link Block Element* the attribute:
 
@@ -61,7 +61,7 @@ Don't forget that the *Menu Name* must correspond to the Menu you created in Wor
 
 ## 2 Level Menu
 
-You can also create a menu that has 2 levels of nesting, to create it you must add on a *Div Block* the following attribute:
+You can also create a menu that has 2 levels of nesting. To create it you must add on a *Div Block* the following attribute:
 
 <custom-attribute dynamic name="mega-menu" value="Menu Name"></custom-attribute>
 
