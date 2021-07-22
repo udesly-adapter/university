@@ -3,8 +3,7 @@ const fetch = require('node-fetch');
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const convert = require('xml-js');
 
-function slugify(text)
-{
+function slugify(text) {
   return text.toString().toLowerCase()
     .replace(/\s+/g, '-')           // Replace spaces with -
     .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
@@ -17,16 +16,16 @@ async function fetchYoutubeVideos() {
   const url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCcuEG-IjaeHRgePmiJ0f8GA";
 
   const xml = await (await fetch(url)).text()
- 
-  const result = JSON.parse(convert.xml2json(xml, {compact: true, spaces: 4}));
- 
+
+  const result = JSON.parse(convert.xml2json(xml, { compact: true, spaces: 4 }));
+
 
 
   const feed = result.feed;
 
   const home_page_url = feed.author.uri;
-  
-  const items = feed.entry.map(item => ({guid: item.id._text, url: item.link._attributes.href, title: item.title._text, date_published: item.published._text}))
+
+  const items = feed.entry.map(item => ({ guid: item.id._text, url: item.link._attributes.href, title: item.title._text, date_published: item.published._text }))
 
   return {
     url: home_page_url,
@@ -38,11 +37,11 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
   const { createNode } = actions
 
   // Data can come from anywhere, but for now create it manually
-  
 
-  const {url, videos} = await fetchYoutubeVideos();
 
-  for(let video of videos) {
+  const { url, videos } = await fetchYoutubeVideos();
+
+  for (let video of videos) {
 
     video.video_id = video.guid.replace('yt:video:', '');
 
@@ -60,13 +59,13 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
         contentDigest: createContentDigest(video)
       }
     }
-  
+
     const node = Object.assign({}, video, nodeMeta)
 
     createNode(node)
   }
 
-  
+
 }
 
 async function getDocsForCMS(cms, graphql) {
@@ -110,7 +109,7 @@ async function createDocsPagesForCMS(cms, graphql, createPage) {
 
   const posts = result.data.allMarkdownRemark.nodes
 
-  const sidebar = posts.reduce( (prev, next) => {
+  const sidebar = posts.reduce((prev, next) => {
     if (!prev[next.fields.sidebar.folder]) {
       prev[next.fields.sidebar.folder] = []
     }
@@ -157,13 +156,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     let value = createFilePath({ node, getNode });
     const cms = getNode(node.parent).sourceInstanceName;
     const originalPath = cms + value;
-    
+
     const path = value.replace(/\d*/gm, '').replace(/ - /gm, '');
     value = path.toLowerCase().replace('index', '')
     value = "/" + cms + "/" + value.split('/').filter(e => !!e).map(value => slugify(value)).join("/");
 
-    const sidebar = {folder: path.split('/').filter(e => !!e)[0],title: node.frontmatter.title, path: value}
-    
+    const sidebar = { folder: path.split('/').filter(e => !!e)[0], title: node.frontmatter.title, path: value }
+
     createNodeField({
       name: `slug`,
       node,
