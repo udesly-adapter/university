@@ -10,9 +10,9 @@ const query = graphql`query MyQuery {
     allYoutubeVideo {
               nodes {
                  data {
-                      video_id,
-                     url,
-                     title
+                    video_id,
+                    url,
+                    title
           }
         }
     }

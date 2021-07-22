@@ -1,6 +1,7 @@
 const path = require(`path`)
 const fetch = require('node-fetch');
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const convert = require('xml-js');
 
 function slugify(text)
 {
@@ -13,9 +14,20 @@ function slugify(text)
 }
 
 async function fetchYoutubeVideos() {
-  const url = "https://feed2json.org/convert?url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=UCcuEG-IjaeHRgePmiJ0f8GA");
+  const url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCcuEG-IjaeHRgePmiJ0f8GA";
 
-  const {home_page_url, items} = await(await fetch(url)).json();
+  const xml = await (await fetch(url)).text()
+ 
+  const result = JSON.parse(convert.xml2json(xml, {compact: true, spaces: 4}));
+ 
+
+
+  const feed = result.feed;
+
+  const home_page_url = feed.author.uri;
+  
+  const items = feed.entry.map(item => ({guid: item.id._text, url: item.link._attributes.href, title: item.title._text, date_published: item.published._text}))
+
   return {
     url: home_page_url,
     videos: items.slice(0, 5)

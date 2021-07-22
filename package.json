@@ -39,7 +39,8 @@
     "strip-markdown": "^4.0.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "xml-js": "^1.6.11"
   },
   "devDependencies": {
     "lunr": "^2.3.9",
