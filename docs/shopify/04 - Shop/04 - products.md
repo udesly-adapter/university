@@ -72,6 +72,25 @@ It's the sku of the current product can be added on div using the attribute:
 
 <copy-element name="Sku">ICU3QiUyMjB0eXBl4YCnJSQzQeKApjQwdyBlYmZsb3cgJTJGWHNjQHBEYXRh4oC+JDJD4YGLcGF5UGxvYWTlgY7jgZ5Abm9kZXPlgZ9ENULkgLRfaeaBgyAyMjFmMzggYTlmMi0yIDQ4Mi1mYiA1ZC01YWUgOS00YjBmIDBlYzViNSRlZueCgHRhZzHngqpkaXbngphjMGxhc3Pqgoc1IkTlgLloaWxkWHJlbuiCoe+Cku+CklBiNWYw4oSQ5oGkIeuEoEJsb2NrLeeEkGTlhJ3mhI10ZSR4dOSFi3RydSfhhZXvg5Tpg5R4YXQkdHLthLluYW0h6IaLcHJvZHUmY+OBsOOFvXZhbEPigbTlhqlza3XihrVcN0TihIzhgKbhgKnhhqNf74W/74W/74W/5ISN5IW/74OfL+GClu+CkuOCkuOIj3N0PHls74aW4YmS4oatdCHvhq4yMml4MS/vh4PhgLXhiZ3oiZBpbiB0ZXJhY3QoaW9u74ewMjJQZXZlbu+BuuKCklHjgZFMaXPtgpfnhLkwMjJtZeyHjHUgbmxpbmtlIGRTeW1ib0BsQ291buWHmyPhiJ3jh7xyb3BwWGVkTOGBheWLoOaAuSB5bkJpbmQgUmVtb3ZlXmTvgZnigYDigqnvgYTqgb0gcGFnaW5hL+KEhe+Bp+GCoOOHrw==</copy-element>
 
+
+## Tags
+
+Products in Shopify can have multiple tags attached, but they are just string, in Webflow it's not possible to attach a field of the same way. To show tags just add the attribute:
+
+<custom-attribute name="product" value="tags"></custom-attribute>
+
+on a text or on a link, and it will be repeated once for each tag attached to the product, you can limit the number of tags to show just by adding the attribute:
+
+<custom-attribute dynamic name="limit" value="number of tags to show"></custom-attribute>
+
+For example
+
+<custom-attribute name="limit" value="1"></custom-attribute>
+
+to show only one tag
+
+<copy-element name="Tags">ICU3QiUyMjB0eXBl4YCnJSQzQeKApjQwdyBlYmZsb3cgJTJGWHNjQHBEYXRh4oC+JDJD4YGLcGF5UGxvYWTlgY7jgZ5Abm9kZXPlgZ9ENULkgLRfaeaBgyAyMjk4N2IgOTU2Zi1kIGE1NC04OSBmNi00M2EgMi1iYmI3IDk4ZGZlZCQ0NueCgHRhZyPngqrogpZjbGFzMnPqgoU1ROWAuWggaWxkcmVuT+iCn++CkO+CkOGCkDfihI4j5oGk64SeTGluay3nhI1k5YSa5oSKYnUodHRv5YKMdHJWdeGFlOKEs2zlgZPmhLAmbeGEsOeFrmV4dEBlcm5hbOeFoSx1cuOArOSGizIzJeKGlzflg614YXQkdHLthaluYW0h6Ia7cHJvZHUkY3Tnhq12YWxf4oKl5YeZ4YWb44an5IGv74GeOeGDiG1p74Gc5YiVMV/lgqjhhbjhgq7pgaLvh6nvh6lP74W55Yep4YSa7oWKduqDjCPogpLjiblzdHlsN++IguKIpeGImXTviJoyWDJpeOODlO6AteGLhynoirppbuGGnWFjUHRpb27viZzhhrtYdmVu74G64oqX44GRWExpc+2Cl+eEueGIgzJl7Ii5dW7iiKVlIGRTeW1ib0BsQ291buWEnCIw5Ympcm9wcDxlZOKJveWNiuaAuXkgbkJpbmRSIGVtb3ZlZD/vgZnigYDigqnvgYTqgb1wQGFnaW5h4oSFJ++Bp+GCoOOHrw==</copy-element>
+
 ## External Video
 
 To products you can assign as media an External Video, you can add in Webflow a placeholder element where the external video will be outputted, using the custom attribute:
