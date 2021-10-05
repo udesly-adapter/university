@@ -58,12 +58,7 @@ You can create a **Create Page** just by creating a new page in Webflow and givi
 For further details refer to [this documentation](/shopify/ecommerce/cart-page).
 
 
-
-
-
 ## Check Forms Configuration
-
-
 
 All the forms require a little of attention. The purpose of the form is declared with the **Form Name** that is a field that can be set in Webflow Element Settings:
 
@@ -79,3 +74,10 @@ Almost all forms requires an input type **Email**. But you will find all the det
 
 
 
+## Remove pages you don't need
+
+Sometimes you want to create pages just for styling purposes, to maintain a list of classes and so on (e.g Styleguides). If you don't want to convert those pages into Shopify, add the attribute:
+
+<custom-attribute name="remove" value="true"></custom-attribute>
+
+on the **Body** element of that page.
