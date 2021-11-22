@@ -615,7 +615,7 @@ apply_filters('udesly/posts/${query_name}', array $args );
 function mytheme_filter_homepage_posts($args) {
 
     if (is_user_logged_in()) {
-        $args['post_status'] => 'future'; // show only posts scheduled for future
+        $args['post_status'] = 'future'; // show only posts scheduled for future
     }
 
     return $args;
