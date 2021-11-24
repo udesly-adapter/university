@@ -46,3 +46,10 @@ This is a link to a specific collection page. You can use it on a link element b
 <custom-attribute dynamic name="collection-link" value="collection-handle"></custom-attribute>
 
 <copy-element name="Collection Link">ICU3QiUyMjB0eXBl4YCnJSQzQeKApjQwdyBlYmZsb3cgJTJGWHNjQHBEYXRh4oC+JDJD4YGLcGF5UGxvYWTlgY7jgZ5Abm9kZXPlgZ9ENULkgLRfaeaBgyAyMjhlODcgZWUwOS0wIGE5Mi03MiA0NC0wM2EgOC1mODY3IDU5MTcwYSQyNueCgHRhZyPngqrogpZjbGFzMnPqgoU1ROWAuWggaWxkcmVuT+iCn++CkO+CkOGCkDfihI4j5oGk64SeTGlua03nhI1k5YSa5oSKbOWAvS3mhJpt4YSa54WYZXggdGVybmFsOeeFi3Vy44Cs5IW1Mioz4oaBN+WDl3hhKHR0cu2Fk25hIm3ohqVjb2xsIGVjdGlvbiYt5oKV44afdmFsJnXvgYbigYZoYW5cZGzjh6XhgoThhL7hgopf5IKN74av74av74av5IS/5IavU+GDtuSIunRy4oKZ44KkJeeJi0Png4YlMjAn5oWa5IKg44mNc3R5Tmzvh5bih7nhh61074euQDIyaXgx74iDR+GAteGKm+iKjmlu4YaHLmHjhLvviLDhhqV2ZS5u74G64omr44WsTGlOc+2Cl+eFh+GHrWXsiI0kdW7iiI9lZFMgeW1ib2xDSG91buWEqjDliL0gcm9wcGVkJ+KJkeWMnuaAuXluQiBpbmRSZW1Qb3ZlZO+BmeKBgCfigqnvgYTqgb1wYWdYaW5h4oig74Gn4YKgIeOHvQ==</copy-element>
+
+
+## Blog Link
+
+This is a link to a specific blog page. You can use it on a link element by adding the attribute:
+
+<custom-attribute dynamic name="blog-link" value="blog-handle"></custom-attribute>
