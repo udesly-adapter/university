@@ -122,6 +122,68 @@ To products you can assign as media a 3D model, you can add in Webflow a placeho
 
 > This element requires custom CSS
 
+## Recommended
+
+The product recommendations are based on products that are commonly purchased together or products in related collections. Product recommendations become more accurate over time as more order and product information becomes available.
+
+The algorithm that identifies recommended products is based on data about products that were purchased together and products with similar descriptions. It uses this data to provide a mix of those related products as recommendations for a given product.
+
+In cases where purchase or product description data aren't available for a given product, products from a related collection are shown. The algorithm uses the collection in the URL from which the request to the API endpoint originated, and pulls other products from that collection. If the product doesn't have a collection URL, then the recommendation algorithm finds collections that include the product and pulls other products from those instead (excluding collections with handles “all” and “frontpage”).
+
+### Requirements and limitations
+The types of product recommendations that appear are determined by your online store and your Shopify plan:
+
+<ul>
+<li>Purchase history and product descriptions: Plus plan and having <7000 products published in your Online Store, with an English storefront</li>
+<li>Purchase history only: Plus plan and having <7000 products published in your Online Store, with a non-English storefront </li>
+
+<li>Purchase history only: Non-Plus plan and having <7000 products published in your Online Store </li>
+
+<li>Collections: Any plan with >7000 products published in your Online Store </li>
+
+</ul>
+You can't customize the recommendation algorithm to exclude specific products (but you can write custom JavaScript code where the recommendations are being displayed to exclude specific products).
+
+The recommendation algorithm doesn't use orders that have been imported from another store or ecommerce platform to generate product recommendations.
+
+Products that are out of stock, set to a price of 0, or gift cards aren't included in recommendations.
+
+Insert a Collection List Wrapper and add the attribute:
+
+<custom-attribute name="shopify" value="recommended"></custom-attribute>
+
+By default this collection is limited to 4 elements, you can change it by adding also the attribute
+
+<custom-attribute dynamic name="limit" value="number"></custom-attribute>
+
+Remember that Shopify can load max 10 recommended products, so do not setup any number higher than that or it will break!
+
+If Shopify doesn't give you any recommendations, you can select them manually by using this custom script
+
+```js
+<script>
+window._recommendedProducts = ["handle-of-the-product", "handle-of-theproduct2"];
+</script>
+```
+
+Basically just create an array with the handle of the products, remember they will be used only and exclusively if Shopify doesn't give you any recommendations.
+
+Since the products are loaded through javascript, Webflow interactions will be restarted automatically, if you need to run any code after Webflow interactions are restarted use the following script:
+
+```js
+<script>
+window.Udesly = window.Udesly || [];
+
+window.Udesly.push(() => {
+
+    Udesly.on("webflow-restarted", () => {
+        // Write your code here
+    });
+
+})
+</script>
+```
+
 
 ## Specific Image
 
