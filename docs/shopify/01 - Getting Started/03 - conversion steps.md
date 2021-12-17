@@ -28,7 +28,7 @@ Converting a site is very very simple, below you will find a guide divided into 
 ## Shopify
 
 1. Upload your theme;
-2. Install the Udesly Shopify App;
+2. Install the [Udesly Shopify App](https://apps.shopify.com/udesly-webflow-importer);
 3. Import your data;
 4. Enjoy! 🍻
 
