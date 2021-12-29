@@ -1,5 +1,5 @@
 ---
-title: @Site
+title: "@Site"
 description: Global Site Elements
 ---
 
@@ -55,3 +55,4 @@ Site Cover Image, can be used on any img or div element with the attribute:
 Site Logo, can be used on any img or div element with the attribute:
 
 <custom-attribute name="site" value="logo"></custom-attribute>
+
