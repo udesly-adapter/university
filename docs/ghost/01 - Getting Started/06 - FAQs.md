@@ -21,6 +21,8 @@ Well for Ghost there are few limits:
 
 * **Members Portal** is disabled;
 
+* **Search** is disabled;
+
 ## 4. Can I change style or layout after conversion?
 
 If you can code, you can modify the code of the theme directly, otherwise you need to modify in Webflow and convert again!
