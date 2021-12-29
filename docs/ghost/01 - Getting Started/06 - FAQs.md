@@ -30,3 +30,11 @@ If you can code, you can modify the code of the theme directly, otherwise you ne
 No, Ghost doesn't save any data inside the Theme. Every article is saved inside the Database and it's never deleted automatically. 
 
 (Pay attention, there is a button that deletes all data inside Ghost Dashboard 💣, use it at your own risk ☢️)
+
+## 6. Can I add custom fields not included in CMS Structure?
+
+Absolutely no! Ghost has a fixed structure and you can't add fields that Ghost doesn't support!
+
+## 7. Can I change the slug of the Collections?
+
+No, Ghost 

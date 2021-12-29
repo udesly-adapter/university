@@ -642,6 +642,6 @@ code {
 }
 
 li p {
-  display: inline-block;
+  display: list-item;
 }
 
