@@ -12,9 +12,7 @@ Converting a site is very very simple, below you will find a guide divided into 
 3.  The extension will add attributes and download a configuration file;
 4.  After the configuration has been downloaded you can export your Webflow *.zip*;
 
-<small>* You can also get a template from the Marketplace, possibly made by Udesly 🥰</small>
-
-![](/images/wf-to-jamstack-attributes.png)
+![](/images/wf-to-ghost-attributes.png)
 
 ## Udesly App
 
