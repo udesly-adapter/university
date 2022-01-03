@@ -53,7 +53,7 @@ const Hero = () => {
               className="logo-container w-inline-block"
             >
               <img
-                src="https://uploads-ssl.webflow.com/60acf65ac9328ac27c774303/60acf65ac9328ab132774363_webflow-to-ghost.svg"
+                src="/images/webflow-to-ghost.svg"
                 loading="lazy"
                 alt="Webflow to Ghost"
               />
