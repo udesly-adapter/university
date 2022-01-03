@@ -16,7 +16,7 @@ Title of the page, it can be used on any kind of text element, but it's adviceab
 
 ### Content
 
-This is the content of the page, inside this content you can use Guthenberg blocks in WordPress or any other page builder like Elementor. In Webflow you just add a placeholder RichText that will be populated by the WordPress page content.
+This is the content of the page. In Webflow you just add a placeholder RichText that will be populated by the WordPress page content.
 
 Just add the following attribute on a RichText element!
 

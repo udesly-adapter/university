@@ -35,7 +35,7 @@ const Tutorials = ({ videos }) => {
             <div className="other-videos">
                 {videos.filter(v => v.video_id !== video.video_id).map( v => {
                     return <div key={v.video_id} onClick={() => setVideo(v)} className="video-thumbnail" role="button" aria-label="change video">
-                        <button type="button" className="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play Video"><svg aria-hidden="true" focusable="false"><use xlinkHref="#plyr-play"></use></svg><span class="plyr__sr-only">Play</span></button>
+                        <button type="button" className="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play Video"><svg aria-hidden="true" focusable="false"><use xlinkHref="#plyr-play"></use></svg><span className="plyr__sr-only">Play</span></button>
                         <img src={`https://img.youtube.com/vi/${v.video_id}/mqdefault.jpg`} />
                         </div>
                 })}

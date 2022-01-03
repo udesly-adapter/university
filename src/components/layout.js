@@ -81,10 +81,10 @@ const Layout = ({ children }) => {
                     Webflow to JamStack
                   </Link>
 
-                  <a className="dropdown-link disabled" href="#">
+                  <Link className="dropdown-link" to="/ghost/getting-started">
                     <img src={wfToGhost} alt="webflow to ghost" />
                     Webflow to Ghost
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

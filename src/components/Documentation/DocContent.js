@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useRef} from "react"
 import DocInternalNavigationMobile from "./DocInternalNavigationMobile"
 import "./doc-content.css"
 import DocNavigation from './DocNavigation'
@@ -13,6 +13,14 @@ const DocContent = ({ post, previous, next, githubUrl }) => {
     day: "numeric",
   })
 
+  const postRef = useRef(null);
+
+  useEffect(() => {
+    if (postRef.current) {
+      postRef.current.querySelectorAll('li p').forEach(p => p.closest('li').style.display ="flex")
+    }
+  }, [postRef])
+
   return (
     <>
       <article className="doc-post">
@@ -23,7 +31,7 @@ const DocContent = ({ post, previous, next, githubUrl }) => {
               title={post.frontmatter.title}
             />
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section dangerouslySetInnerHTML={{ __html: post.html }} ref={postRef}/>
       </article>
       <div className="article-footer">
         <div className="article-meta"><small>

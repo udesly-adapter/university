@@ -38,6 +38,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/docs/ghost`,
+        name: `ghost`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/docs/wordpress`,
         name: `wordpress`,
       },
