@@ -94,7 +94,7 @@ const Hamburger = () => {
             Webflow to JamStack
           </Link>
 
-          <a className="dropdown-link disabled" href="#">
+          <a className="dropdown-link" href="/ghost/getting-started">
             <img src={wfToGhost} alt="webflow to ghost" />
             Webflow to Ghost
           </a>
