@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+.white-section.transparent {
+    background-color: transparent;
+    margin: auto;
+}
+
 .cards {
     display: grid;
     justify-content: center;
@@ -17,13 +22,13 @@
 
 .card {
     border-radius: 30px;
-    border: 2px solid #F1F1F1;
-    padding: 42px 28px;
+    border: 1px solid #8351FF;
+    padding: 40px;
+    background-color: #312058;
 }
 
 .card__dark {
-    background: #F8F8FA;
-    border: 0;
+    background: transparent;
 }
 
 .card .main-button {
@@ -31,16 +36,19 @@
 }
 
 .card h3 {
-    margin: 10px 0;
-    font-size: 50px;
+    margin: 22px 0;
+    font-size: 42px;
+    font-weight: 500;
     line-height: 1.1;
-    letter-spacing: -3.5px;
+    letter-spacing: -3.5%;
+    color: white;
 }
 
 .card p {
     line-height: 32px;
     font-size: 22px;
-    letter-spacing: -1px;
+    letter-spacing: -2%;
+    color: white;
 }
 
 @media screen and (max-width: 991px) {

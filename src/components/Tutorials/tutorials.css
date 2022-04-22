@@ -1,113 +1,202 @@
 .tutorials {
-    background-color: #F8F8FA;
+  background-color: transparent;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
-    padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.tutorials h2 {
+  color: white;
+  width: 100%;
+
+  font-family: Jost;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.035em;
+  text-align: left;
+}
+
+.tutorials h2 span {
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 .tutorials .main-video {
-    max-width: 1100px;
-    width: 100%;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.tutorials-wrapper {
+  display: grid;
+  grid-template-columns: 5.5fr 4.5fr;
+  grid-gap: 16px;
+  width: 100%;
 }
 
 .plyr--video {
-    border-radius: 10px;
-    background-color: white;
+  border-radius: 10px;
+  background-color: white;
 }
 
 :root {
-    --plyr-color-main: #6f39f8;
+  --plyr-color-main: #6f39f8;
 }
 
 .plyr__video-embed,
 .plyr__video-wrapper--fixed-ratio {
-    aspect-ratio: 16/9 !important;
+  aspect-ratio: 16/9 !important;
 }
 
 .other-videos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    max-width: 1100px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+}
+
+.other-video {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.video-title {
+  margin: 0;
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: white;
+}
+
+.video-title--main {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.main-video > div {
+  height: 384.6px;
+  border-radius: 0px;
 }
 
 .other-videos img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    opacity: 0.4;
-    transition: opacity 300ms ease-in-out;
+  width: 200px;
+  height: 110px;
+  object-fit: cover;
+  opacity: 0.4;
+  transition: opacity 300ms ease-in-out;
 }
 
 .video-thumbnail {
-    position: relative;
-    cursor: pointer;
-    border: 2px solid #f1f1f1;
-    border-radius: 10px;
-    height: 160px;
+  position: relative;
+  cursor: pointer;
+  width: 200px;
 }
 
 .video-thumbnail button {
-    display: block;
-    opacity: 0.7;
-    transition: opacity 300ms ease-in-out;
+  display: block;
+  opacity: 0.3;
+  transition: opacity 300ms ease-in-out;
 }
 
 .video-thumbnail:hover button {
-    opacity: 1;
+  opacity: 1;
 }
 
 .video-thumbnail:hover img {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .main-button {
-    padding: 15px 28px;
-    border-style: none;
-    border-width: 2px;
-    border-color: #6f39f8;
-    border-radius: 100px;
-    background-color: #8351ff;
-    transition: all 300ms ease-in-out;
-    color: #fff;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 500;
-    letter-spacing: -0.035em;
-    height: auto;
+  padding: 10px 28px;
+  border-style: none;
+  border-width: 2px;
+  border-color: #6f39f8;
+  border-radius: 100px;
+  background-color: #8351ff;
+  transition: all 300ms ease-in-out;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .tutorials {
+    padding: 50px;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .tutorials {
-        padding: 50px;
-    }
+  .tutorials {
+    padding: 50px;
+  }
 
-    .other-videos {
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-    }
+  .other-videos img {
+    width: 100%;
+  }
 
-    .other-videos img {
-        width: 100%;
-    }
+  .video-title {
+    display: none;
+  }
+
+  .tutorials-wrapper {
+    grid-template-columns: 1fr 200px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    
+  .tutorials-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .other-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+
+  .tutorials,
+  .tutorials-wrapper,
+  .tutorials .main-video {
+    max-width: 100%;
+  }
+
+  .main-video > div {
+    height: 333px;
+  }
+  .video-thumbnail {
+    width: auto;
+  }
+
+  .other-videos img {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 479px) {
-    .tutorials {
-        padding: 40px 20px;
-    }
+  .tutorials {
+    padding: 40px 20px;
+  }
 
-    .other-videos {
-        grid-template-columns: 1fr;
-    }
+  .video-thumbnail {
+    width: 100%;
+    height: 242px;
+  }
+
+  .other-videos {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .main-video > div {
+    height: 242px;
+  }
 }

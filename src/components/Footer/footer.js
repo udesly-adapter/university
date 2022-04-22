@@ -1,60 +1,67 @@
-import React from 'react';
-import './footer.css'
-
+import React from "react"
+import "./footer.css"
 
 const Footer = () => {
+  return (
+    <footer>
+      <div className="copyright-wrap">
+        <div className="copyright-container flex-center">
+          <svg
+            width="35"
+            height="34"
+            viewBox="0 0 35 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.0967 33.983C26.5389 33.983 34.1934 26.5321 34.1934 17.341C34.1934 8.14995 26.5389 0.699097 17.0967 0.699097C7.65445 0.699097 0 8.14995 0 17.341C0 26.5321 7.65445 33.983 17.0967 33.983Z"
+              fill="#fff"
+            />
+            <path
+              d="M27.9778 19.2625C27.9778 19.6913 27.9125 20.1359 27.7983 20.5488V20.5647L27.6841 20.8823V20.8981C27.4394 21.4222 27.1621 21.9303 26.8358 22.4067L26.8195 22.4226C25.025 25.011 22.5943 25.6303 21.2729 25.7891C21.0118 25.8208 20.7998 25.8367 20.6203 25.8526H20.604H20.5877H20.4409H20.3267H20.3103H20.2451H20.1962H20.1798C20.0004 25.8367 19.8046 25.7891 19.6252 25.7256C19.462 25.662 19.3152 25.5827 19.1684 25.4874C19.0053 25.3762 18.8747 25.2174 18.7606 25.0586C18.4995 24.6299 18.3038 24.1376 18.2059 23.6453C18.1569 23.4548 18.1406 23.2483 18.108 23.0419C18.108 23.026 18.108 23.026 18.108 23.0101V22.9943V23.0101C18.0428 23.1213 17.9775 23.2166 17.9122 23.3277C17.8633 23.4071 17.798 23.5024 17.7491 23.5818C17.6839 23.6771 17.6186 23.7565 17.5533 23.8518C17.5207 23.8994 17.4881 23.947 17.4391 23.9788C17.325 24.1058 17.2108 24.2329 17.0966 24.3599C17.0476 24.4076 17.015 24.4393 16.9661 24.4869C16.9171 24.5346 16.8845 24.5663 16.8355 24.614C16.754 24.6934 16.6561 24.7728 16.5745 24.8363C16.4766 24.9157 16.3788 24.9792 16.2972 25.0586C15.5305 25.6303 14.5843 25.932 13.6218 25.9161H13.5076C11.7946 25.9002 10.4895 25.5827 9.55967 24.9475C8.61348 24.2964 8.14038 23.3277 8.14038 22.0415C8.14038 21.708 8.17301 21.3586 8.23826 21.0252C8.25458 20.9458 8.27089 20.8823 8.2872 20.8029C9.59229 17.2934 9.96751 13.657 10.0654 11.3227L10.1143 11.1003C10.1633 10.8145 10.359 10.5604 10.6201 10.4175C11.2726 10.084 12.1209 9.90937 13.165 9.90937C14.1927 9.90937 14.7637 10.5604 14.9105 11.8626C15.0247 12.9265 14.9758 13.8793 14.7637 14.7209C14.5516 15.5625 14.2743 16.6106 13.9154 17.881C13.5565 19.1514 13.3771 20.2788 13.3771 21.2475C13.3771 21.978 13.8175 22.3749 14.7148 22.4226C14.7637 22.4226 14.829 22.4226 14.8942 22.4226C15.9872 22.4226 16.9334 21.4857 17.7328 19.6119C18.3527 18.1827 18.7769 16.5788 19.0053 14.8162C19.0053 14.8003 19.0053 14.7686 18.9889 14.7527C18.9726 14.5939 18.9563 14.3874 18.94 14.1493C18.9237 13.8793 18.9237 13.6093 18.9074 13.3553C18.8911 13.1012 18.8911 12.8312 18.8911 12.5772V11.9896C18.8911 10.5287 20.0493 9.81409 22.3822 9.81409C22.9532 9.81409 23.3284 10.0046 23.4752 10.3699C23.622 10.7351 23.7036 11.3068 23.7036 12.069C23.7036 13.1329 23.4589 14.7844 22.9695 17.0235C22.7737 17.8969 22.6269 18.6591 22.5127 19.3102C22.4964 19.4054 22.4801 19.5007 22.4637 19.5801C22.3169 20.4535 22.2517 21.1046 22.268 21.5333C22.268 21.8986 22.3985 22.0891 22.6432 22.0891C22.9858 22.0891 23.3936 21.8827 23.883 21.4698C23.8993 21.4539 23.932 21.438 23.9483 21.4222L24.0299 21.3586C24.4703 20.9775 24.9108 20.5647 25.3676 20.1359C25.857 19.6436 26.2974 19.199 26.7216 18.7861C27.1294 18.3733 27.4231 18.1668 27.5699 18.1668C27.8146 18.1509 27.9778 18.5162 27.9778 19.2625Z"
+              fill="#2E1C5A"
+            />
+            <path
+              d="M20.5878 25.853L20.4407 25.8367L20.5878 25.853Z"
+              fill="#fff"
+            />
+          </svg>
+          <div className="copyright-text">
+            Project by{" "}
+            <a
+              href="https://www.eclipse.srl/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="eclipse-link"
+            >
+              Eclipse SRL
+            </a>{" "}
+            | © {new Date().getFullYear()}
+          </div>
+        </div>
 
-    return <footer>
-             <div className="footer-banner">
-                 <div className="banner-head">Do you have a Webflow project to convert? <span className="nanum banner">Start today for free!</span><span className="nanum banner"></span>
-                 </div>
-                 <a href="https://udesly.com/pricing" className="main-button full w-button">Try it now</a>
-                 </div>
-                 <div className="w-layout-grid footer-grid">
-                     <p id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77a8-c6be77a6" className="footer-title">Udesly</p>
-                     <p id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77aa-c6be77a6" className="footer-title">App</p>
-                     <p id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77ac-c6be77a6" className="footer-title">Studio</p>
-                     <p id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77ae-c6be77a6" className="footer-title">Resources</p>
-                     <p id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77b0-c6be77a6" className="footer-title">Support</p>
-                     <p id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77b2-c6be77a6" className="footer-title">Social</p>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77b4-c6be77a6" href="https://udesly.com/why-udesly" className="footer-links">Why Udesly</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77b6-c6be77a6" href="https://udesly.com/webflow-to-shopify" className="footer-links">Webflow to Shopify</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77b8-c6be77a6" href="https://studio.udesly.com/customization/" target="_blank" rel="noopener noreferrer" className="footer-links">Customize a template</a><a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77ba-c6be77a6" href="https://udesly.com/webflow-tools" className="footer-links">Webflow Tools</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77bc-c6be77a6" href="https://udesly.com/help-center" className="footer-links">Help Center</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77be-c6be77a6" href="https://www.facebook.com/groups/373995326416699/" target="_blank" rel="noopener noreferrer" className="footer-links">Facebook Community</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77c0-c6be77a6" href="https://udeslycommunity.slack.com/join/shared_invite/enQtNjc3MTY0MTk5NzAzLTE0MTE0Y2JjYmRjZTYwMDMxN2IyMjk0ZTFmOGNlNTIwYjgzM2M3NGE1OTFlZGM2ODdjYTFhZmY0OGI5NTY3NDc?fbclid=IwAR2cRByFhoMPQ7A6zzreI7GdyzRNLTnTFHnrJBDCI__sJKPozhrBij3N3ec#/shared-invite/email" target="_blank" rel="noopener noreferrer" className="footer-links">Slack Community</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77c2-c6be77a6" href="https://www.instagram.com/udeslyapp/" target="_blank" rel="noopener noreferrer" className="footer-links">Instagram</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77c4-c6be77a6" href="https://twitter.com/udesly_com" target="_blank" rel="noopener noreferrer" className="footer-links">Twitter</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77c6-c6be77a6" href="https://www.facebook.com/udesly/" target="_blank" rel="noopener noreferrer" className="footer-links">Facebook</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77c8-c6be77a6" href="https://www.youtube.com/c/Udesly" target="_blank" rel="noopener noreferrer" className="footer-links">YouTube</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77ca-c6be77a6" href="https://webflow.com/udesly" target="_blank" rel="noopener noreferrer" className="footer-links">Webflow</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77cc-c6be77a6" href="https://udesly.com/webflow-templates" className="footer-links">Webflow Templates</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77ce-c6be77a6" href="https://studio.udesly.com/conversion/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" className="footer-links">Convert a project</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77d0-c6be77a6" href="https://studio.udesly.com/custom-project/" target="_blank" rel="noopener noreferrer" className="footer-links">Custom project</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77d2-c6be77a6" href="https://udesly.com/webflow-to-wordpress" className="footer-links">Webflow to WordPress</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77d4-c6be77a6" href="https://udesly.com/webflow-to-jamstack" className="footer-links">Webflow to Jamstack</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77d6-c6be77a6" href="https://udesly.com/webflow-to-ghost" className="footer-links">Webflow to Ghost</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77d8-c6be77a6" href="https://udesly.com/showcase" className="footer-links">Showcase</a>
-                     <a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77de-c6be77a6" href="https://udesly.com/pricing" className="footer-links">Pricing</a>
-                     <a href="https://webflow.com/" id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77e0-c6be77a6" target="_blank" rel="noopener noreferrer" className="webflow-banner w-inline-block">
-                         <img src="https://uploads-ssl.webflow.com/5c0e728aa90b666fa989d544/5c0e728aa90b666aaa89d76e_webflow-mark-vector-blue.svg" width="22" alt="webflow-logo" className="webflow-logo" />
-                         <div className="webflow-text">Explore Webflow</div></a><a id="w-node-_7dc9558a-060a-59aa-1b7e-3223c6be77e4-c6be77a6" href="https://www.reddit.com/r/Udesly/" target="_blank" rel="noopener noreferrer" className="footer-links">Reddit</a>
-                         </div>
-                         <div className="footer-separator"></div>
-                         <div className="copyright-wrap">
-                             <div className="copyright-container">
-                                 <div className="copyright-text">© 2021 | Udesly is a project by <a href="https://www.eclipse.srl/" target="_blank" rel="noopener noreferrer" className="eclipse-link">Eclipse SRL</a>
-                                 </div>
-                                 </div>
-                                 <div className="info-links">
-                                     <a href="https://udesly.com/cookie-policy" className="footer-links info">Cookie</a>
-                                     <div className="point"></div>
-                                     <a href="https://udesly.com/privacy-policy" className="footer-links info">Privacy</a>
-                                     <div className="point"></div>
-                                     <a href="https://udesly.com/terms-of-use" className="footer-links">Terms of Use</a>
-                                     </div>
-                                     </div>
+        <div className="info-links">
+          <a
+            href="https://udesly.com/cookie-policy"
+            className="footer-links info"
+          >
+            Cookie
+          </a>
+          <div className="point"></div>
+          <a
+            href="https://udesly.com/privacy-policy"
+            className="footer-links info"
+          >
+            Privacy
+          </a>
+          <div className="point"></div>
+          <a href="https://udesly.com/terms-of-use" className="footer-links">
+            Terms of Use
+          </a>
+        </div>
+      </div>
     </footer>
+  )
 }
 
-export default Footer;
+export default Footer

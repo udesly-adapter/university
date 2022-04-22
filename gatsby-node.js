@@ -13,7 +13,7 @@ function slugify(text) {
 }
 
 async function fetchYoutubeVideos() {
-  const url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCcuEG-IjaeHRgePmiJ0f8GA";
+  const url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCkNDzUP2K4r6OVPtCbx0u7g";
 
   const xml = await (await fetch(url)).text()
 
@@ -29,7 +29,7 @@ async function fetchYoutubeVideos() {
 
   return {
     url: home_page_url,
-    videos: items.slice(0, 5)
+    videos: items.slice(0, 4)
   }
 }
 

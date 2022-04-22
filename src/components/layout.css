@@ -20,8 +20,8 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    border-bottom: 1px solid #f1f1f1;
-    background-color: #fff;
+    padding-top: 76px;
+    padding-bottom: 76px;
 }
 
 .navigation-container {
@@ -31,7 +31,7 @@
     display: flex;
     width: 100%;
     height: 100%;
-    max-width: 900px;
+    max-width: 1100px;
     min-height: 70px;
     margin-right: auto;
     margin-left: auto;
@@ -270,11 +270,12 @@ a.dropdown-link {
 }
 
 header.udesly-doc-homepage-header {
-    position: fixed;
+    /* position: fixed;*/
     top: 0;
     z-index: 9999;
     left: 0;
     width: 100%;
+    background-color: transparent;
 }
 
 .logo-home path, .hover-color-logo path {
@@ -283,4 +284,32 @@ header.udesly-doc-homepage-header {
 
 .logo-home:hover [fill="#3C3C3B"], .hover-color-logo:hover [fill="#3C3C3B"] {
     fill: #919191;
+}
+
+body[data-layout="home"] {
+    background: linear-gradient(180deg, #0C0B0B 0%, #2E1C5A 100%);
+}
+
+body[data-layout="home"] header * {
+    background: transparent;
+}
+
+body[data-layout="home"] .logo-home path[fill="#3C3C3B"] {
+    fill: white;
+}
+
+.navigation-links-wrapper a {
+    color: white;
+    font-size: 18px;
+}
+
+.navigation-links-wrapper a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.navigation-links-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
