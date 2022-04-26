@@ -6,6 +6,7 @@ const Footer = () => {
     <footer>
       <div className="copyright-wrap">
         <div className="copyright-container flex-center">
+          <a href="https://www.udesly.com">
           <svg
             width="35"
             height="34"
@@ -26,6 +27,7 @@ const Footer = () => {
               fill="#fff"
             />
           </svg>
+          </a>
           <div className="copyright-text">
             Project by{" "}
             <a

@@ -330,3 +330,7 @@ body[data-layout="home"] .logo-home path[fill="#3C3C3B"] {
     }
 
 }
+
+body[data-layout="doc"] header.doc {
+    background-color: white;
+}
