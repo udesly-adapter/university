@@ -52,8 +52,6 @@
   aspect-ratio: 16/9 !important;
 }
 
-.other-videos {
-}
 
 .other-video {
   margin-bottom: 20px;
@@ -150,6 +148,10 @@
   .tutorials-wrapper {
     grid-template-columns: 1fr 200px;
   }
+
+  .tutorials h2 { 
+  font-size: 38px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -183,7 +185,7 @@
 
 @media screen and (max-width: 479px) {
   .tutorials {
-    padding: 40px 20px;
+    padding: 20px 20px;
   }
 
   .video-thumbnail {
@@ -199,4 +201,13 @@
   .main-video > div {
     height: 242px;
   }
+
+  .tutorials h2 { 
+    font-size: 28px;
+    }
+
+    .hero-content-wrapper {
+      padding: 20px;
+      margin-bottom: 0;
+    }
 }

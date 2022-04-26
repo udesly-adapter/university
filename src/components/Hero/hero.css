@@ -311,12 +311,20 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    .hero h1 {
+        font-size: 85px;
+    }
+
+    .hero {
+        padding-bottom: 0px;
+    }
 }
 
 
 @media screen and (max-width: 767px) {
     h1.hero-heading {
-        font-size: 42px;
+        font-size: 65px;
         text-align: center;
     }
 
@@ -364,7 +372,7 @@
     }
     
     h1.hero-heading {
-        font-size: 34px;
+        font-size: 55px;
     }
 
     .big-paragraph.max-width {
@@ -377,7 +385,7 @@
 
     .hero {
         position: static;
-        padding: 75px 10px 0px;
+       
     }
 
     .copyright-text {

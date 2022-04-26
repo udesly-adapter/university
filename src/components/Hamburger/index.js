@@ -5,6 +5,8 @@ import wfToShopify from '../../../static/images/webflow-to-shopify.svg';
 import wfToJamstack from '../../../static/images/webflow-to-jamstack.svg';
 import wfToGhost from '../../../static/images/webflow-to-ghost.svg';
 
+import wfTo from "../../../static/images/webflow-to.svg"
+
 const Hamburger = () => {
 
   const [open, setOpen] = useState(false);
@@ -82,26 +84,27 @@ const Hamburger = () => {
       <div className={"mobile-menu" + (open ? " open" : " closed")}>
         <div className="mobile-links">
           <Link className="dropdown-link" to="/shopify/getting-started">
-            <img src={wfToShopify} alt="webflow to shopify" />
-            Webflow to Shopify
+          <img src={wfTo} alt="webflow to" className="img-webflow-to"/>
+            Shopify
           </Link>
           <Link className="dropdown-link" to="/wordpress/getting-started">
-            <img src={wfToWordPress} alt="webflow to wordpress" />
-            Webflow to WordPress
+            <img src={wfTo} alt="webflow to" className="img-webflow-to"/>
+            WordPress
           </Link>
           <Link className="dropdown-link" to="/jamstack/getting-started">
-            <img src={wfToJamstack} alt="webflow to jamstack" />
-            Webflow to JamStack
+          <img src={wfTo} alt="webflow to" className="img-webflow-to"/>
+            JamStack
           </Link>
 
           <a className="dropdown-link" href="/ghost/getting-started">
-            <img src={wfToGhost} alt="webflow to ghost" />
-            Webflow to Ghost
+            <img src={wfTo} alt="webflow to" className="img-webflow-to"/>
+            Ghost
           </a>
           <a href="https://studio.udesly.com" target="_blank" rel="noreferrer noopener">Studio</a>
           <a href="https://udesly.com/help-center" target="_blank" rel="noreferrer noopener">Support</a>
+          <a href="https://udesly.com/" target="_blank" rel="noreferrer noopener">Back to Udesly</a>
         </div>
-        <a href="https://udesly.com/" target="_blank" rel="noreferrer noopener" className="main">Back to Udesly</a>
+        
       </div>
     </>
   )

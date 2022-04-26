@@ -55,15 +55,16 @@
     .white-section {
         padding: 50px;
     }
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .white-section {
         padding: 40px 20px;
     }
-    .cards {
-        grid-template-columns: 1fr;
-    }
+  
 }
 
 @media screen and (max-width: 479px) {
@@ -73,5 +74,9 @@
 
     .cards {
         grid-template-columns: 1fr;
+    }
+
+    .card h3 {
+        font-size: 36px;
     }
 }

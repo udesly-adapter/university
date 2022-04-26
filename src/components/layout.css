@@ -20,8 +20,8 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 76px;
-    padding-bottom: 76px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .navigation-container {
@@ -261,13 +261,7 @@ a.dropdown-link {
     
 }
 
-@media screen and (max-width: 991px) {
-    .only-on-desktop {
-        display: none;
-    }
 
-
-}
 
 header.udesly-doc-homepage-header {
     /* position: fixed;*/
@@ -294,6 +288,20 @@ body[data-layout="home"] header * {
     background: transparent;
 }
 
+body[data-layout="home"] header .hamburger-line-01, body[data-layout="home"] header .hamburger-line-02, body[data-layout="home"] header .hamburger-line-03 {
+    background: white;
+}
+
+body[data-layout="home"] .mobile-links a {
+   color: white;
+   border-bottom: none;
+}
+
+body[data-layout="home"] .mobile-menu.open {
+    z-index: 999;
+    background: linear-gradient(180deg, #0C0B0B 0%, #2E1C5A 100%);
+}
+
 body[data-layout="home"] .logo-home path[fill="#3C3C3B"] {
     fill: white;
 }
@@ -312,4 +320,13 @@ body[data-layout="home"] .logo-home path[fill="#3C3C3B"] {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media screen and (max-width: 991px) {
+ 
+    .only-on-desktop {
+        display: none;
+    }
+
 }
