@@ -57,7 +57,7 @@
 
 .hero h1 {
     margin-bottom: 10px;
-    font-family: Jost, sans-serif;
+    font-family: 'GeneralSans-Variable', sans-serif;
     color: white;
     font-size: 130px;
     line-height: 1.2;
@@ -75,7 +75,7 @@
 }
 
 .big-paragraph {
-    font-family: Jost, sans-serif;
+    font-family: 'GeneralSans-Variable', sans-serif;
     color: white;
     font-size: 26px;
     line-height: 37.57px;
