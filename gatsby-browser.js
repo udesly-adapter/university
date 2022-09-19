@@ -1,5 +1,6 @@
 // normalize CSS across browsers
 import "./src/normalize.css"
+import "./src/general-sans.css"
 // custom CSS styles
 import "./src/style.css"
 

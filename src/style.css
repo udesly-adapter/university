@@ -1,7 +1,4 @@
 /* CSS Custom Properties Definitions */
-
-@import url("https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900%7CNanum+Pen+Script:regular&display=swap");
-
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 
 :root {
@@ -31,8 +28,8 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: "Jost", sans-serif;
-  --fontFamily-serif: "Jost", sans-serif;
+  --fontFamily-sans: 'GeneralSans-Variable', sans-serif;
+  --fontFamily-serif: 'GeneralSans-Variable', sans-serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
