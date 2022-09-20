@@ -118,3 +118,7 @@ body[data-layout="doc"].menu-doc-open {
     padding-top: 16px;
     padding-bottom: 16px;
 }
+
+p, .doc-folder-link, .doc-post * {
+    font-weight: 500;
+}
